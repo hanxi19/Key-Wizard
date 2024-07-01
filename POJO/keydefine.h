@@ -3,21 +3,24 @@
 #include "mydefine.h"
 #include <vector>
 #include<string>
+#include <sstream>
+#include <iostream>
 using namespace std;
 class KeyDefine:public myDefine{
 public:
     KeyDefine();
-    KeyDefine& toObject() override;
-    string toString() override;
+    KeyDefine& toObject(const string & data);
+    string toString(const KeyDefine & regord);
     vector<char> getKeys();
     vector<int> getTimes();
     void setName(string name) override;
     string getName() override;
-    void setKeys(vector<char> keys);
-    void setTimes(vector<int> times);
+    //void setKeys(vector<char> keys);
+    void setKeys(char c);
+    //void setTimes(vector<int> times);
+    void setTimes(int time);
     void save() override;
-    void record();
-    void end();
+
 
 private:
     vector<char>keys; //键的名称，以ascii码存储

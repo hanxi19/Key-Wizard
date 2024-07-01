@@ -8,8 +8,6 @@ class MouseDefine:public myDefine
 public:
     MouseDefine();
     MouseDefine(int keyType,int time);
-    MouseDefine& toObject() override;
-    string toString() override;
     int getKeyType();
     int gettime();
     string getName() override;
