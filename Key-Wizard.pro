@@ -1,4 +1,6 @@
 QT       += core gui
+QT+=sql
+
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -23,6 +25,7 @@ SOURCES += \
     POJO/mousedefine.cpp \
     POJO/mydefine.cpp \
     applycation.cpp \
+    data/mysql.cpp \
     main.cpp \
     mainwindow.cpp \
     ui/add_customize_widget.cpp \
@@ -37,6 +40,7 @@ HEADERS += \
     POJO/mousedefine.h \
     POJO/mydefine.h \
     applycation.h \
+    data/mysql.h \
     mainwindow.h \
     ui/add_customize_widget.h \
     ui/add_quickclick_widget.h \

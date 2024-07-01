@@ -8,8 +8,8 @@ class myDefine
 {
 public:
     myDefine();
-    virtual void toString()=0;
-    virtual void toObject()=0;
+
+
     virtual void setName(string name)=0;
     virtual string getName()=0;
     virtual void save()=0;
