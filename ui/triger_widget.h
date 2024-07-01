@@ -17,6 +17,9 @@ public:
 
 private:
     Ui::triger_widget *ui;
+
+private:
+
 };
 
 #endif // TRIGER_WIDGET_H

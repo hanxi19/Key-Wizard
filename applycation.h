@@ -1,7 +1,7 @@
 #ifndef APPLYCATION_H
 #define APPLYCATION_H
 #include <list>
-#include "POJO/mydefine.h"
+#include "..\POJO\mydefine.h"
 
 
 class Applycation
@@ -11,7 +11,6 @@ public:
     static char getStartKey();
     static char getEndKey();
     static list<myDefine> getDefineList();
-    static void triger(myDefine *define);
 private:
     Applycation();
     static char startKey;

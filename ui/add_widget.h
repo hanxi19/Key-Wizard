@@ -2,6 +2,9 @@
 #define ADD_WIDGET_H
 
 #include <QWidget>
+#include "add_customize_widget.h"
+#include "add_quickclick_widget.h"
+#include "add_record_widget.h"
 
 namespace Ui {
 class add_widget;
@@ -17,6 +20,10 @@ public:
 
 private:
     Ui::add_widget *ui;
+    add_quickClick_widget* m_quickclick;
+    add_record_widget* m_record;
+    add_customize_widget* m_customize;
+
 };
 
 #endif // ADD_WIDGET_H

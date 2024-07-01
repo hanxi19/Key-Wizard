@@ -1,10 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
+<<<<<<< HEAD
 <!-- Written by QtCreator 4.11.1, 2024-07-01T15:03:19. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
   <value type="QByteArray">{add59c8f-27d2-411d-80cb-879a14096f53}</value>
+=======
+<<<<<<< HEAD
+<!-- Written by QtCreator 4.11.1, 2024-07-01T15:43:20. -->
+=======
+<!-- Written by QtCreator 4.11.1, 2024-07-01T11:30:06. -->
+>>>>>>> 76bbc77de0b1e1523d7145920b00534a892f7ba3
+<qtcreator>
+ <data>
+  <variable>EnvironmentId</variable>
+  <value type="QByteArray">{da31f2d1-96bb-414e-ae44-b69f1a3be6ad}</value>
+>>>>>>> 09fa92aea30ec988fb5d9362b735e03e9356a359
  </data>
  <data>
   <variable>ProjectExplorer.Project.ActiveTarget</variable>
@@ -71,7 +83,11 @@
    <value type="int" key="ProjectExplorer.Target.ActiveDeployConfiguration">0</value>
    <value type="int" key="ProjectExplorer.Target.ActiveRunConfiguration">0</value>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.0">
+<<<<<<< HEAD
     <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">E:/QT/QTProject/QtOnline/git/build-Key-Wizard-Desktop_Qt_5_14_2_MinGW_32_bit-Debug</value>
+=======
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">E:/develop/Qt/code/build-Key-Wizard-Desktop_Qt_5_14_2_MinGW_32_bit-Debug</value>
+>>>>>>> 09fa92aea30ec988fb5d9362b735e03e9356a359
     <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
      <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
       <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
@@ -119,7 +135,11 @@
     <value type="int" key="Qt4ProjectManager.Qt4BuildConfiguration.BuildConfiguration">2</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.1">
+<<<<<<< HEAD
     <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">E:/QT/QTProject/QtOnline/git/build-Key-Wizard-Desktop_Qt_5_14_2_MinGW_32_bit-Release</value>
+=======
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">E:/develop/Qt/code/build-Key-Wizard-Desktop_Qt_5_14_2_MinGW_32_bit-Release</value>
+>>>>>>> 09fa92aea30ec988fb5d9362b735e03e9356a359
     <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
      <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
       <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
@@ -167,7 +187,11 @@
     <value type="int" key="Qt4ProjectManager.Qt4BuildConfiguration.BuildConfiguration">0</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.2">
+<<<<<<< HEAD
     <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">E:/QT/QTProject/QtOnline/git/build-Key-Wizard-Desktop_Qt_5_14_2_MinGW_32_bit-Profile</value>
+=======
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">E:/develop/Qt/code/build-Key-Wizard-Desktop_Qt_5_14_2_MinGW_32_bit-Profile</value>
+>>>>>>> 09fa92aea30ec988fb5d9362b735e03e9356a359
     <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
      <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
       <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
@@ -287,8 +311,18 @@
     </valuelist>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
+<<<<<<< HEAD
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:E:/QT/QTProject/QtOnline/git/Key-Wizard/Key-Wizard.pro</value>
     <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">E:/QT/QTProject/QtOnline/git/Key-Wizard/Key-Wizard.pro</value>
+=======
+<<<<<<< HEAD
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:C:/QT/github project/Key-Wizard new/Key-Wizard.pro</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">C:/QT/github project/Key-Wizard new/Key-Wizard.pro</value>
+=======
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:E:/develop/Qt/code/Key-Wizard/Key-Wizard.pro</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">E:/develop/Qt/code/Key-Wizard/Key-Wizard.pro</value>
+>>>>>>> 76bbc77de0b1e1523d7145920b00534a892f7ba3
+>>>>>>> 09fa92aea30ec988fb5d9362b735e03e9356a359
     <value type="QString" key="RunConfiguration.Arguments"></value>
     <value type="bool" key="RunConfiguration.Arguments.multi">false</value>
     <value type="QString" key="RunConfiguration.OverrideDebuggerStartup"></value>
@@ -299,7 +333,15 @@
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
     <value type="QString" key="RunConfiguration.WorkingDirectory"></value>
+<<<<<<< HEAD
     <value type="QString" key="RunConfiguration.WorkingDirectory.default">E:/QT/QTProject/QtOnline/git/build-Key-Wizard-Desktop_Qt_5_14_2_MinGW_32_bit-Debug</value>
+=======
+<<<<<<< HEAD
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">C:/QT/github project/build-Key-Wizard-Desktop_Qt_5_14_2_MinGW_32_bit-Debug</value>
+=======
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">E:/develop/Qt/code/build-Key-Wizard-Desktop_Qt_5_14_2_MinGW_32_bit-Debug</value>
+>>>>>>> 76bbc77de0b1e1523d7145920b00534a892f7ba3
+>>>>>>> 09fa92aea30ec988fb5d9362b735e03e9356a359
    </valuemap>
    <value type="int" key="ProjectExplorer.Target.RunConfigurationCount">1</value>
   </valuemap>
@@ -314,7 +356,11 @@
    <value type="int" key="ProjectExplorer.Target.ActiveDeployConfiguration">0</value>
    <value type="int" key="ProjectExplorer.Target.ActiveRunConfiguration">0</value>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.0">
+<<<<<<< HEAD
     <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">E:/QT/QTProject/QtOnline/git/build-Key-Wizard-Desktop_Qt_5_14_2_MinGW_64_bit-Debug</value>
+=======
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">E:/develop/Qt/code/build-Key-Wizard-Desktop_Qt_5_14_2_MinGW_64_bit-Debug</value>
+>>>>>>> 09fa92aea30ec988fb5d9362b735e03e9356a359
     <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
      <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
       <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
@@ -362,7 +408,11 @@
     <value type="int" key="Qt4ProjectManager.Qt4BuildConfiguration.BuildConfiguration">2</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.1">
+<<<<<<< HEAD
     <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">E:/QT/QTProject/QtOnline/git/build-Key-Wizard-Desktop_Qt_5_14_2_MinGW_64_bit-Release</value>
+=======
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">E:/develop/Qt/code/build-Key-Wizard-Desktop_Qt_5_14_2_MinGW_64_bit-Release</value>
+>>>>>>> 09fa92aea30ec988fb5d9362b735e03e9356a359
     <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
      <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
       <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>
@@ -410,7 +460,11 @@
     <value type="int" key="Qt4ProjectManager.Qt4BuildConfiguration.BuildConfiguration">0</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.2">
+<<<<<<< HEAD
     <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">E:/QT/QTProject/QtOnline/git/build-Key-Wizard-Desktop_Qt_5_14_2_MinGW_64_bit-Profile</value>
+=======
+    <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">E:/develop/Qt/code/build-Key-Wizard-Desktop_Qt_5_14_2_MinGW_64_bit-Profile</value>
+>>>>>>> 09fa92aea30ec988fb5d9362b735e03e9356a359
     <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
      <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">
       <value type="bool" key="ProjectExplorer.BuildStep.Enabled">true</value>

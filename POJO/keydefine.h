@@ -10,7 +10,7 @@ class KeyDefine:public myDefine{
 public:
     KeyDefine();
     KeyDefine& toObject(const string & data);
-    string toString(const KeyDefine & regord);
+    string toString();
     vector<char> getKeys();
     vector<int> getTimes();
     void setName(string name) override;
