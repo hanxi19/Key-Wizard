@@ -1,5 +1,5 @@
-#include "widget.h"
-#include "ui_widget.h"
+#include "triger_widget.h"
+#include "ui_triger_widget.h"
 
 //checkbox格式改变函数
 void setcheckbox(QCheckBox *c)
@@ -23,9 +23,9 @@ void setlabel(QLabel *label)
     label->setFont(font);
 }
 
-Widget::Widget(QWidget *parent)
+triger_widget::triger_widget(QWidget *parent)
     : QWidget(parent)
-    , ui(new Ui::Widget)
+    , ui(new Ui::triger_widget)
 {
     ui->setupUi(this);
 
@@ -58,7 +58,7 @@ Widget::Widget(QWidget *parent)
 }
 
 
-Widget::~Widget()
+triger_widget::~triger_widget()
 {
     delete ui;
 }
