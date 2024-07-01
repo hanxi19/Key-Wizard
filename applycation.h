@@ -10,7 +10,7 @@ public:
     static void init();
     static char getStartKey();
     static char getEndKey();
-    static list<myDefine> getDefineList();
+    static list<myDefine*> getDefineList();
 private:
     Applycation();
     static char startKey;

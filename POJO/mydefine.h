@@ -9,7 +9,6 @@ class myDefine
 public:
     myDefine();
 
-
     virtual void setName(string name)=0;
     virtual string getName()=0;
     virtual void save()=0;
