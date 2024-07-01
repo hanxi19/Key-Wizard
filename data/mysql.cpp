@@ -110,7 +110,7 @@ void mySql::deleteDefine(int id,myDefine* mydefine){
     }
 }
 
-list<myDefine*> mySql::queryDefine(){
+list<myDefine*>* mySql::queryDefine(){
     QSqlQuery sql_query;
     QString select_sql = "select * from keydefine";
     list<myDefine*>* defineList=new list<myDefine*>;
@@ -145,4 +145,8 @@ list<myDefine*> mySql::queryDefine(){
             defineList->push_back(define);
         }
     }
+
+    return defineList;
 }
+
+
