@@ -12,3 +12,4 @@ triger_widget::~triger_widget()
 {
     delete ui;
 }
+
