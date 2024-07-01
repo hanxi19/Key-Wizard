@@ -1,5 +1,5 @@
-#ifndef WIDGET_H
-#define WIDGET_H
+#ifndef TRIGER_WIDGET_H
+#define TRIGER_WIDGET_H
 
 #include <QWidget>
 #include<QTableWidget>
@@ -10,19 +10,19 @@
 #include<QApplication>
 
 QT_BEGIN_NAMESPACE
-namespace Ui { class Widget; }
+namespace Ui { class triger_widget; }
 QT_END_NAMESPACE
 
-class Widget : public QWidget
+class triger_widget : public QWidget
 {
     Q_OBJECT
 
 public:
-    Widget(QWidget *parent = nullptr);
-    ~Widget();
+    explicit triger_widget(QWidget *parent = nullptr);
+    ~triger_widget();
 
 private:
-    Ui::Widget *ui;
+    Ui::triger_widget *ui;
 };
-#endif // WIDGET_H
+#endif // TRIGER_WIDGET_H
 
