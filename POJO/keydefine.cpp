@@ -5,21 +5,22 @@ KeyDefine::KeyDefine()
 
 }
 
-KeyDefine& KeyDefine::toObject(const string & data){
+KeyDefine* KeyDefine::toObject(const string & data){
+    KeyDefine* define=new KeyDefine;
     vector<int>numbers;
     if(data.empty()){
-        return *this;
+        return define;
     }
     istringstream iss(data);
     int num;
     while (iss >> num) {
         numbers.push_back(num);
     }
-    for(unsigned i=0;2*i<keys.size();i++){
-        keys.push_back(numbers[2*i]);
-        times.push_back(numbers[2*i+1]);
+    for(unsigned i=0;2*i<define-> keys.size();i++){
+        define-> keys.push_back(numbers[2*i]);
+        define-> times.push_back(numbers[2*i+1]);
     }
-    return *this;
+    return define;
 }
 string KeyDefine::toString()
 {
