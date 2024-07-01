@@ -8,10 +8,20 @@ add_record_widget::add_record_widget(QWidget *parent) :
     ui->setupUi(this);
 
     KeyDefine* m_key = new KeyDefine();
-
+    connect(ui->startBtn, &QPushButton::clicked, this, [=]()
+    {
+        //录制
+        //m_key->record();
+    });
+    connect(ui->endBtn, &QPushButton::clicked, this, [=]()
+    {
+        //结束录制
+        //m_key->end();
+    });
     connect(ui->saveBtn, &QPushButton::clicked, this, [=]()
     {
         m_key->setName(ui->nameEdit->text().toStdString());
+        m_key->save();
         emit add_record_widget::sendSaveSuccess();
     });
 
@@ -25,15 +35,5 @@ add_record_widget::add_record_widget(QWidget *parent) :
 add_record_widget::~add_record_widget()
 {
     delete ui;
-}
-
-void add_record_widget::on_startBtn_clicked()
-{
-    //开始录制
-}
-
-void add_record_widget::on_endBtn_clicked()
-{
-    //结束录制
 }
 
