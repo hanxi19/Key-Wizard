@@ -4,6 +4,7 @@ KeyDefine::KeyDefine()
 {
 
 }
+
 KeyDefine& KeyDefine::toObject(const string & data){
     vector<int>numbers;
     if(data.empty()){
@@ -20,14 +21,14 @@ KeyDefine& KeyDefine::toObject(const string & data){
     }
     return *this;
 }
-string KeyDefine::toString(const KeyDefine & regord)
+string KeyDefine::toString()
 {
 
     string data;
-    for(unsigned i=0;i<regord.keys.size();i++){
+    for(unsigned i=0;i<this->keys.size();i++){
         data+=keys[i];
         data+=' ';
-        data+=to_string(regord.times[i]);
+        data+=to_string(this->times[i]);
     }
     return data;
 }

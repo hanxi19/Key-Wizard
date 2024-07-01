@@ -13,6 +13,7 @@ public:
 private:
     mySql(){};
     QSqlDatabase database;
+
 };
 
 #endif // MYSQL_H

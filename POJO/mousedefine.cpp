@@ -5,8 +5,6 @@ MouseDefine::MouseDefine(int keyType,int time){
     this->keyType=keyType;
     this->time=time;
 }
-
-
 int MouseDefine::getKeyType(){
     return keyType;
 }
