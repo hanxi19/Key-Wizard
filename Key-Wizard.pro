@@ -32,6 +32,7 @@ SOURCES += \
     ui/add_quickclick_widget.cpp \
     ui/add_record_widget.cpp \
     ui/add_widget.cpp \
+    ui/save_success.cpp \
     ui/set_widget.cpp \
     ui/triger_widget.cpp
 
@@ -46,6 +47,7 @@ HEADERS += \
     ui/add_quickclick_widget.h \
     ui/add_record_widget.h \
     ui/add_widget.h \
+    ui/save_success.h \
     ui/set_widget.h \
     ui/triger_widget.h
 
@@ -55,6 +57,7 @@ FORMS += \
     ui/add_quickclick_widget.ui \
     ui/add_record_widget.ui \
     ui/add_widget.ui \
+    ui/save_success.ui \
     ui/set_widget.ui \
     ui/triger_widget.ui
 

@@ -2,6 +2,7 @@
 #define ADD_QUICKCLICK_WIDGET_H
 
 #include <QWidget>
+#include "save_success.h"
 
 namespace Ui {
 class add_quickClick_widget;
@@ -26,6 +27,8 @@ signals:
     void sendSaveSuccess();
 private:
     Ui::add_quickClick_widget *ui;
+
+    save_success* m_save ;
 };
 
 #endif // ADD_QUICKCLICK_WIDGET_H
