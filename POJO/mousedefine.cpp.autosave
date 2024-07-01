@@ -1,7 +1,0 @@
-#include "mousedefine.h"
-
-MouseDefine::MouseDefine(){}
-MouseDefine::MouseDefine(int keyType,int time){
-    this->keyType=keyType;
-    this->time=time;
-}
