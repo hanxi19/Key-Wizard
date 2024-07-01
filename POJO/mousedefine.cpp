@@ -1,6 +1,6 @@
-#include "mousedefine.h"
+//#include "mousedefine.h"
 
-MouseDefine::MouseDefine()
-{
+//MouseDefine::MouseDefine()
+//{
 
-}
+//}

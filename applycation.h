@@ -1,7 +1,7 @@
 #ifndef APPLYCATION_H
 #define APPLYCATION_H
 #include <list>
-#include "/POJO/mydefine.h"
+#include "..\POJO\mydefine.h"
 
 
 class Applycation
