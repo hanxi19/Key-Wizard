@@ -1,25 +1,28 @@
-#ifndef TRIGER_WIDGET_H
-#define TRIGER_WIDGET_H
+#ifndef WIDGET_H
+#define WIDGET_H
 
 #include <QWidget>
+#include<QTableWidget>
+#include<QHBoxLayout>
+#include<QCheckBox>
+#include<QLabel>
+#include<QWidget>
+#include<QApplication>
 
-namespace Ui {
-class triger_widget;
-}
+QT_BEGIN_NAMESPACE
+namespace Ui { class Widget; }
+QT_END_NAMESPACE
 
-class triger_widget : public QWidget
+class Widget : public QWidget
 {
     Q_OBJECT
 
 public:
-    explicit triger_widget(QWidget *parent = nullptr);
-    ~triger_widget();
+    Widget(QWidget *parent = nullptr);
+    ~Widget();
 
 private:
-    Ui::triger_widget *ui;
-
-private:
-
+    Ui::Widget *ui;
 };
+#endif // WIDGET_H
 
-#endif // TRIGER_WIDGET_H

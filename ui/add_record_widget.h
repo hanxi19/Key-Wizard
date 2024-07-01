@@ -16,12 +16,7 @@ public:
     explicit add_record_widget(QWidget *parent = nullptr);
     ~add_record_widget();
 
-private slots:
-    void on_startBtn_clicked();
 
-    void on_endBtn_clicked();
-
-    //void on_saveBtn_clicked();
 
 signals:
     //发送保存成功的信号

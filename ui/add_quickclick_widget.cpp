@@ -3,6 +3,7 @@
 #include <QMenu>
 #include <QIntValidator>
 #include "..\POJO\mousedefine.h"
+
 add_quickClick_widget::add_quickClick_widget(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::add_quickClick_widget)
@@ -41,11 +42,13 @@ add_quickClick_widget::add_quickClick_widget(QWidget *parent) :
     {
         m_mouse->setTime(ui->intervalEdit->text().toInt());
         m_mouse->setName(ui->nameEdit->text().toStdString());
-
+        m_mouse->save();
         emit add_quickClick_widget::sendSaveSuccess();
     });
 
-    //产生的m_mouse鼠标宏还未保存到数据库
+
+
+
 
     m_save = new save_success();
     connect(this, &add_quickClick_widget::sendSaveSuccess, m_save, [=]()

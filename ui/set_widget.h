@@ -15,8 +15,15 @@ public:
     explicit set_widget(QWidget *parent = nullptr);
     ~set_widget();
 
+private slots:
+
+    void on_startButton_clicked();
+
+    void on_endButton_2_clicked();
+
 private:
     Ui::set_widget *ui;
+
 };
 
 #endif // SET_WIDGET_H
