@@ -36,7 +36,9 @@ SOURCES += \
     ui/input_incomplete.cpp \
     ui/save_success.cpp \
     ui/set_widget.cpp \
-    ui/triger_widget.cpp
+    ui/triger_widget.cpp \
+    util/myfile.cpp \
+    util/myjson.cpp
 
 HEADERS += \
     POJO/keydefine.h \
@@ -53,7 +55,9 @@ HEADERS += \
     ui/input_incomplete.h \
     ui/save_success.h \
     ui/set_widget.h \
-    ui/triger_widget.h
+    ui/triger_widget.h \
+    util/myfile.h \
+    util/myjson.h
 
 FORMS += \
     mainwindow.ui \
