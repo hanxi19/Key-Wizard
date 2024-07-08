@@ -23,3 +23,8 @@ void MainWindow::on_addBtn_clicked()
 {
 
 }
+
+void MainWindow::on_setBtn_clicked()
+{
+
+}

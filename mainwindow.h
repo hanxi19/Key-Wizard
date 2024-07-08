@@ -20,6 +20,8 @@ private slots:
 
     void on_addBtn_clicked();
 
+    void on_setBtn_clicked();
+
 private:
     Ui::MainWindow *ui;
 };

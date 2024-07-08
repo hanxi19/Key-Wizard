@@ -118,7 +118,7 @@ LRESULT CALLBACK KeyDefine::KeyboardProc(int nCode, WPARAM wParam, LPARAM lParam
                         // 计算按键抬起到当前按键按下的时间间隔
                         DWORD interval = tick - lastKeyUpTick;
                         instance->times.push_back(interval);
-                      //  qDebug() << "Key press interval: " << interval << " ms" << endl;
+                        //qDebug() << "Key press interval: " << interval << " ms" << endl;
                     }
                     // 重置上一次按键抬起的时间
                     lastKeyUpTick = 0;
@@ -161,6 +161,9 @@ void KeyDefine::regord(){
     return ;
 }
 void KeyDefine::end() {
-        PostQuitMessage(0);; // 停止录制
+    if (keyboardHook != NULL) {
+        UnhookWindowsHookEx(keyboardHook);
+        keyboardHook = NULL;
     }
+}
 
