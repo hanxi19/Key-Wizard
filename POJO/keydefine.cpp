@@ -91,3 +91,84 @@ void KeyDefine::setTimes(vector<int> times){
 void KeyDefine::save(){
 
 }
+HHOOK KeyDefine::keyboardHook = NULL;
+DWORD KeyDefine::lastKeyUpTick = 0;
+bool KeyDefine::keyRecorded = false;
+int KeyDefine::keyvcode=0;
+int KeyDefine::keyintervaltime=0;
+KeyDefine* KeyDefine::instance=nullptr;
+void KeyDefine::setInstance(KeyDefine* ptr){
+          instance = ptr;
+      }
+LRESULT CALLBACK KeyDefine::KeyboardProc(int nCode, WPARAM wParam, LPARAM lParam) {
+    PKBDLLHOOKSTRUCT p = (PKBDLLHOOKSTRUCT)lParam;
+
+    if (nCode == HC_ACTION) {
+
+            DWORD tick = GetTickCount();
+
+            if (!keyRecorded) { // 如果键值尚未记录
+                if ((wParam == WM_KEYDOWN) || (wParam == WM_SYSKEYDOWN)) {
+
+                    if (lastKeyUpTick != 0) {
+                        // 计算按键抬起到当前按键按下的时间间隔
+                        DWORD interval = tick - lastKeyUpTick;
+                        instance->times.push_back(interval);
+                        //qDebug() << "Key press interval: " << interval << " ms" << endl;
+                    }else{
+                        // 重置上一次按键抬起的时间
+                        instance->times.push_back(0);
+                    }
+                    keyRecorded = true; // 标记键值已被记录
+                    instance->keys.push_back(p->vkCode);
+                }
+            } else {
+                if ((wParam == WM_KEYUP) || (wParam == WM_SYSKEYDOWN)) {
+                    keyRecorded = false; // 重置标志位，准备记录下一个键值
+                }
+                 lastKeyUpTick = tick;
+            }
+
+        }
+    return CallNextHookEx(keyboardHook, nCode, wParam, lParam);
+}
+void KeyDefine::regord(){
+    keyRecorded = false;
+
+    KeyDefine::setInstance(this);//传入当前对象指针
+    MSG Msg;
+
+    // 设置键盘全局监听
+    keyboardHook = SetWindowsHookEx(
+        WH_KEYBOARD_LL,  // 监听键盘类型
+        KeyboardProc,	 // 处理函数
+        NULL,		     // 当前实例句柄
+        0				 // 监听窗口句柄
+    );
+
+    if (keyboardHook == NULL) {
+        cout << "键盘监听失败！error : " << GetLastError() << endl;
+    }
+
+    // 消息循环
+
+    while (GetMessage(&Msg, NULL, 0, 0) > 0) {
+        TranslateMessage(&Msg);
+        DispatchMessage(&Msg);
+    }
+
+    return ;
+}
+void KeyDefine::end() {
+    if (keyboardHook != NULL) {
+        UnhookWindowsHookEx(keyboardHook);
+        keyboardHook = NULL;
+    }
+ }
+void KeyDefine::clear(){
+        lastKeyUpTick=0;
+        this->keys.clear();
+        this->times.clear();
+    }
+
+
