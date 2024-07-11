@@ -27,6 +27,10 @@ void DefineTrigerThread::run(){
             if(define==nullptr){continue;}
             else if(typeid (define)==typeid(KeyDefine*)){
                 KeyDefine* keyDefine=dynamic_cast<KeyDefine*>(this->define) ;
+                for(unsigned i=0;i<keyDefine->getKeys().size();i++){
+                    sleep(keyDefine->getTimes()[i]);
+                    keybd_event(keyDefine->getKeys()[i],0,0,0);
+                }
             }else if(typeid (define)==typeid(MouseDefine*)){
                 MouseDefine* mouseDefine=dynamic_cast<MouseDefine*>(this->define);
                 switch (mouseDefine->getKeyType()) {
