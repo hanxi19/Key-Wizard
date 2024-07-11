@@ -27,16 +27,21 @@ public:
     int getId(){return id;};
     void setId(int id){this->id=id;};
 
+    //回调函数，监视和处理键盘事件
     static LRESULT CALLBACK KeyboardProc(int nCode, WPARAM wParam, LPARAM lParam);
+    //静态变量作为对象与静态钩子函数的中转
     static void setInstance(KeyDefine* ptr);
+    //在mainwindow创建一个全局keydefine对象调用
     void regord();
+    //结束该次录制
     void end();
+    //在调用regord前先清除上次录制的内容
+    void clear();
 
     vector<int>keys; //键的名称，以ascii码存储
     vector<int>times; //两个键之间的时间间隔
 private:
-    //vector<int>keys; //键的名称，以ascii码存储
-    //vector<int>times; //两个键之间的时间间隔
+
     string name;
     int id;
 

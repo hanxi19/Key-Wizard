@@ -119,9 +119,12 @@ LRESULT CALLBACK KeyDefine::KeyboardProc(int nCode, WPARAM wParam, LPARAM lParam
                         DWORD interval = tick - lastKeyUpTick;
                         instance->times.push_back(interval);
                         //qDebug() << "Key press interval: " << interval << " ms" << endl;
+                    }else{
+                        // 重置上一次按键抬起的时间
+                        instance->times.push_back(0);
+                        lastKeyUpTick = 0;
                     }
-                    // 重置上一次按键抬起的时间
-                    lastKeyUpTick = 0;
+
                 }
             } else {
                 if ((wParam == WM_KEYUP) || (wParam == WM_SYSKEYDOWN)) {
@@ -136,7 +139,7 @@ LRESULT CALLBACK KeyDefine::KeyboardProc(int nCode, WPARAM wParam, LPARAM lParam
 void KeyDefine::regord(){
     keyRecorded = false;
 
-    KeyDefine::setInstance(this);
+    KeyDefine::setInstance(this);//传入当前对象指针
     MSG Msg;
 
     // 设置键盘全局监听
@@ -165,5 +168,11 @@ void KeyDefine::end() {
         UnhookWindowsHookEx(keyboardHook);
         keyboardHook = NULL;
     }
-}
+ }
+void KeyDefine::clear(){
+        lastKeyUpTick=0;
+        this->keys.clear();
+        this->times.clear();
+    }
+
 
