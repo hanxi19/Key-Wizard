@@ -109,11 +109,7 @@ LRESULT CALLBACK KeyDefine::KeyboardProc(int nCode, WPARAM wParam, LPARAM lParam
 
             if (!keyRecorded) { // 如果键值尚未记录
                 if ((wParam == WM_KEYDOWN) || (wParam == WM_SYSKEYDOWN)) {
-                    keyRecorded = true; // 标记键值已被记录
-                    // 将键值转换为字符并添加到keys数组中
-                    //char key = MapVirtualKey(p->vkCode, MAPVK_VK_TO_CHAR);
-                   // qDebug() << "The press key: " << key << endl;
-                    instance->keys.push_back(p->vkCode);
+
                     if (lastKeyUpTick != 0) {
                         // 计算按键抬起到当前按键按下的时间间隔
                         DWORD interval = tick - lastKeyUpTick;
@@ -122,9 +118,9 @@ LRESULT CALLBACK KeyDefine::KeyboardProc(int nCode, WPARAM wParam, LPARAM lParam
                     }else{
                         // 重置上一次按键抬起的时间
                         instance->times.push_back(0);
-                        lastKeyUpTick = 0;
                     }
-
+                    keyRecorded = true; // 标记键值已被记录
+                    instance->keys.push_back(p->vkCode);
                 }
             } else {
                 if ((wParam == WM_KEYUP) || (wParam == WM_SYSKEYDOWN)) {
