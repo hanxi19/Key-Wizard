@@ -7,8 +7,8 @@ add_customize_widget::add_customize_widget(QWidget *parent) :
     ui(new Ui::add_customize_widget)
 {
     ui->setupUi(this);
-
-    KeyDefine* m_key = new KeyDefine();
+    m_custom = new customize_key_and_interval;
+    m_key = new KeyDefine;
     //未完成：
     //按下添加按钮，弹出customize_key_and_interval窗口
 
@@ -18,9 +18,13 @@ add_customize_widget::add_customize_widget(QWidget *parent) :
 
     //将按键和时间间隔保存到m_key中
 
-    //需要一个循环？
 
-
+    connect(ui->addBtn, &QPushButton::clicked, this, [=]()
+    {
+        m_custom->show();
+    });
+    connect(m_custom, SIGNAL(SignalSendKey(QString)), this, SLOT(SlotGetKey(QString)));
+    connect(m_custom, SIGNAL(SignalSendInterval(QString)), this, SLOT(SlotGetInterval(QString)));
 
 
     //保存
@@ -41,4 +45,15 @@ add_customize_widget::add_customize_widget(QWidget *parent) :
 add_customize_widget::~add_customize_widget()
 {
     delete ui;
+}
+
+void add_customize_widget::SlotGetKey(QString str)
+{
+   //建议为setKeys加一个以String为参数的函数，否则类型转换非常麻烦
+   // m_key->setKeys(str.toStdString());
+}
+
+void add_customize_widget::SlotGetInterval(QString str)
+{
+   m_key->setTimes(str.toInt());
 }
