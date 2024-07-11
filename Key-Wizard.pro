@@ -28,6 +28,8 @@ SOURCES += \
     data/mysql.cpp \
     main.cpp \
     mainwindow.cpp \
+    myThread/definetrigerthread.cpp \
+    myThread/shortcutkeylistenthread.cpp \
     ui/add_customize_widget.cpp \
     ui/add_quickclick_widget.cpp \
     ui/add_record_widget.cpp \
@@ -47,6 +49,8 @@ HEADERS += \
     applycation.h \
     data/mysql.h \
     mainwindow.h \
+    myThread/definetrigerthread.h \
+    myThread/shortcutkeylistenthread.h \
     ui/add_customize_widget.h \
     ui/add_quickclick_widget.h \
     ui/add_record_widget.h \
