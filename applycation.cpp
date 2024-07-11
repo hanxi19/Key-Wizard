@@ -37,3 +37,15 @@ void Applycation::init(){
 
 int Applycation::startKey=-1;
 int Applycation::endKey=-1;
+
+void Applycation::setStartKey(int key){
+    startKey=key;
+    ShortcutKeyListenThread::setStart(startKey);
+    myFile::saveStartKey(startKey);
+}
+
+void Applycation::setEndKey(int key){
+    endKey=key;
+    ShortcutKeyListenThread::setEnd(endKey);
+    myFile::saveEndKey(endKey);
+}

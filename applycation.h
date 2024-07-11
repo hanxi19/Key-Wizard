@@ -4,6 +4,8 @@
 #include "..\POJO\mydefine.h"
 #include "data/mysql.h"
 #include "util/myfile.h"
+#include "myThread/shortcutkeylistenthread.h"
+#include "myThread/definetrigerthread.h"
 
 class Applycation
 {
@@ -12,8 +14,8 @@ public:
     static char getStartKey();
     static char getEndKey();
     static list<myDefine*>* getDefineList();
-    static void setStartKey(char key);
-    static void setEndKey(char key);
+    static void setStartKey(int key);
+    static void setEndKey(int key);
 private:
     Applycation();
     static int startKey;

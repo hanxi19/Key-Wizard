@@ -19,9 +19,17 @@ void ShortcutKeyListenThread::run(){
 }
 
 void ShortcutKeyListenThread::setStart(int start){
-    this->startKey=start;
+    startKey=start;
 }
 
 void ShortcutKeyListenThread::setEnd(int end){
-    this->endKey=end;
+    endKey=end;
 }
+
+ShortcutKeyListenThread::ShortcutKeyListenThread(int start,int end){
+    startKey=start;
+    endKey=end;
+}
+
+int ShortcutKeyListenThread::startKey=0;
+int ShortcutKeyListenThread::endKey=0;

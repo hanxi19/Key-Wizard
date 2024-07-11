@@ -8,13 +8,13 @@ class ShortcutKeyListenThread:public QThread
 {
 public:
     ShortcutKeyListenThread();
-    ShortcutKeyListenThread(int start,int end):startKey(start),endKey(end){}
+    ShortcutKeyListenThread(int start,int end);
     void run() override;
-    void setStart(int start);
-    void setEnd(int end);
+    static void setStart(int start);
+    static void setEnd(int end);
 private:
-    int startKey;
-    int endKey;
+    static int startKey;
+    static int endKey;
 };
 
 #endif // SHORTCUTKEYLISTENTHREAD_H
