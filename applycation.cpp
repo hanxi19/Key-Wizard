@@ -6,7 +6,7 @@ Applycation::Applycation()
 
 }
 
-list<myDefine*>* Applycation::defineList=new list<myDefine*>();
+vector<myDefine*>* Applycation::defineList=new vector<myDefine*>();
 
 void Applycation::init(){
     //extern list<myDefine*> defineList;
@@ -33,6 +33,9 @@ void Applycation::init(){
     startKey=keys[0];
     endKey=keys[1];
     qDebug()<<"start key:"<<startKey<<" "<<"end key:"<<endKey<<endl;
+
+    (new DefineTrigerThread)->start();
+    //(new ShortcutKeyListenThread(startKey,endKey))->start();
 }
 
 int Applycation::startKey=-1;
@@ -48,4 +51,16 @@ void Applycation::setEndKey(int key){
     endKey=key;
     ShortcutKeyListenThread::setEnd(endKey);
     myFile::saveEndKey(endKey);
+}
+
+int Applycation::getStartKey(){
+    return startKey;
+}
+
+int Applycation::getEndKey(){
+    return endKey;
+}
+
+vector<myDefine*>* Applycation::getDefineList(){
+    return defineList;
 }

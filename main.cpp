@@ -13,10 +13,7 @@ int main(int argc, char *argv[])
     MainWindow w;
     w.show();
 
-    myFile::saveStartKey(30);
-    myFile::saveEndKey(50);
     Applycation::init();
-
 
     return a.exec();
 }

@@ -8,6 +8,7 @@
 #include<windows.h>
 #include<QDebug>
 #include<QString>
+#include<data/mysql.h>
 using namespace std;
 class KeyDefine:public myDefine{
 public:

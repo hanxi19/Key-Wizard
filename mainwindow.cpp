@@ -7,6 +7,8 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    WinKeyHook* start=new WinKeyHook;
+    start->SetKeyPressCallBack(std::bind(&MainWindow::keyPressEvent, this, std::placeholders::_1));
 }
 
 MainWindow::~MainWindow()
@@ -28,3 +30,17 @@ void MainWindow::on_setBtn_clicked()
 {
 
 }
+
+void MainWindow::keyPressEvent(int keyCode)
+{
+    if(keyCode==Applycation::getStartKey())
+    {
+        DefineTrigerThread::setFlag(true);
+        qDebug()<<"start shortcut pressed";
+    }else if(keyCode==Applycation::getEndKey()){
+        DefineTrigerThread::setFlag(false);
+        qDebug()<<"end shortcut pressed";
+    }
+}
+
+

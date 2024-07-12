@@ -31,5 +31,5 @@ void MouseDefine::setTime(int time){
 
 void MouseDefine:: save(){
     mySql sql;
-        sql.insertDefine(this);
+    sql.insertDefine(this);
 }

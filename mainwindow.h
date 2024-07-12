@@ -2,6 +2,10 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include "util/winkeyhook.h"
+#include "myThread/definetrigerthread.h"
+#include "applycation.h"
+#include <QDebug>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -24,6 +28,8 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
+    void keyPressEvent(int keyCode);
+
 };
 #endif // MAINWINDOW_H
 

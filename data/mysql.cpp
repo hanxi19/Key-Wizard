@@ -118,10 +118,10 @@ void mySql::deleteDefine(int id,myDefine* mydefine){
     }
 }
 
-list<myDefine*>* mySql::queryDefine(){
+vector<myDefine*>* mySql::queryDefine(){
     QSqlQuery sql_query;
     QString select_sql = "select * from keydefine";
-    list<myDefine*>* defineList=new list<myDefine*>;
+    vector<myDefine*>* defineList=new vector<myDefine*>;
     if(!sql_query.exec(select_sql))
     {
         qDebug()<<sql_query.lastError();

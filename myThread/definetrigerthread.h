@@ -15,7 +15,7 @@ public:
 
     DefineTrigerThread();
     static void setFlag(bool newFlag);
-    void setDefine(myDefine* define);
+    static void setDefine(myDefine* define);
     void deleteDefine();
 
     void run() override;

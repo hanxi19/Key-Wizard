@@ -40,7 +40,8 @@ SOURCES += \
     ui/set_widget.cpp \
     ui/triger_widget.cpp \
     util/myfile.cpp \
-    util/myjson.cpp
+    util/myjson.cpp \
+    util/winkeyhook.cpp
 
 HEADERS += \
     POJO/keydefine.h \
@@ -61,7 +62,8 @@ HEADERS += \
     ui/set_widget.h \
     ui/triger_widget.h \
     util/myfile.h \
-    util/myjson.h
+    util/myjson.h \
+    util/winkeyhook.h
 
 FORMS += \
     mainwindow.ui \
