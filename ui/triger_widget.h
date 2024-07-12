@@ -8,6 +8,7 @@
 #include<QLabel>
 #include<QWidget>
 #include<QApplication>
+#include<QButtonGroup>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class triger_widget; }
