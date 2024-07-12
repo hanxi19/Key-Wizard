@@ -17,7 +17,7 @@ public:
     ~mySql(){database.close();};
     void insertDefine(myDefine *define);
     void deleteDefine(int id,myDefine *mydefine);
-    list<myDefine*> queryDefine();
+    list<myDefine*>* queryDefine();
 private:
     QSqlDatabase database;
 

@@ -1,4 +1,5 @@
 #include "mysql.h"
+#include <QCoreApplication>
 
 QSqlDatabase& mySql::getDatabase(){
     //extern QSqlDatabase database;
@@ -13,14 +14,17 @@ mySql::mySql(){
     else
     {
         database = QSqlDatabase::addDatabase("QSQLITE");
-        database.setDatabaseName("MyDataBase.db");
-//        database.setUserName("XingYeZhiXia");
-//        database.setPassword("123456");
+        QString dbPath = QCoreApplication::applicationDirPath() + "//MyDataBase.db";
+        database.setDatabaseName(dbPath);
+        qDebug()<<dbPath<<endl;
+        database.setUserName("root");
+        database.setPassword("123456");
+        database.open();
     }
 
 
     QSqlQuery sql_query;
-    QString create_sql = "create table if not exists keyDefine (id int primary key, name varchar(30), define varchar(300))";
+    QString create_sql = "create table if not exists keyDefine (id integer primary key AUTOINCREMENT, name varchar(30), define varchar(300));";
     sql_query.prepare(create_sql);
     if(!sql_query.exec())
     {
@@ -30,8 +34,10 @@ mySql::mySql(){
     {
         qDebug() << "Table keyDefine created!";
     }
-    create_sql = "create table if not exists mouseDefine (id int primary key, keytype int,time int)";
-    if(!sql_query.exec())
+    create_sql = "create table if not exists mouseDefine (id integer primary key AUTOINCREMENT,name varchar(30), keytype int,time int);";
+    QSqlQuery sql_query2;
+    sql_query2.prepare(create_sql);
+    if(!sql_query2.exec())
     {
         qDebug() << "Error: Fail to create table mouseDefine." << sql_query.lastError();
     }
@@ -44,9 +50,10 @@ mySql::mySql(){
 void mySql::insertDefine(myDefine *define){
     if(typeid (*define)==typeid(KeyDefine))
     {
+        qDebug()<<"add keyDefine"<<endl;
         KeyDefine* keyDefine =dynamic_cast<KeyDefine*>(define);
         QSqlQuery sql_query;
-        QString insert_sql = "insert into keydefine values (?, ?)";
+        QString insert_sql = "insert into keydefine (name,define) values (?, ?)";
         sql_query.prepare(insert_sql);
         sql_query.addBindValue(QString::fromStdString(keyDefine->getName()));
         sql_query.addBindValue(QString::fromStdString(keyDefine->toString()));
@@ -60,9 +67,10 @@ void mySql::insertDefine(myDefine *define){
         }
     }
     else{
+        qDebug()<<"add mouseDefine"<<endl;
         MouseDefine* mouseDefine=dynamic_cast<MouseDefine*>(define);
         QSqlQuery sql_query;
-        QString insert_sql = "insert into keydefine values (?, ? , ? )";
+        QString insert_sql = "insert into mousedefine (name,keytype,time) values (?, ? , ? )";
         sql_query.prepare(insert_sql);
         sql_query.addBindValue(QString::fromStdString(mouseDefine->getName()));
         sql_query.addBindValue(mouseDefine->getKeyType());
@@ -81,7 +89,7 @@ void mySql::insertDefine(myDefine *define){
 
 void mySql::deleteDefine(int id,myDefine* mydefine){
     QSqlQuery sql_query;
-    if(typeid(mydefine)==typeid (KeyDefine))
+    if(typeid(*mydefine)==typeid (KeyDefine))
     {
         QString delete_sql = "delete from keydefine where id = ?";
         sql_query.prepare(delete_sql);
@@ -92,7 +100,7 @@ void mySql::deleteDefine(int id,myDefine* mydefine){
         }
         else
         {
-            qDebug()<<"deleted!";
+            qDebug()<<"keyDefine deleted!";
         }
     }
     else{
@@ -105,12 +113,12 @@ void mySql::deleteDefine(int id,myDefine* mydefine){
         }
         else
         {
-            qDebug()<<"deleted!";
+            qDebug()<<"mouseDefine deleted!";
         }
     }
 }
 
-list<myDefine*> mySql::queryDefine(){
+list<myDefine*>* mySql::queryDefine(){
     QSqlQuery sql_query;
     QString select_sql = "select * from keydefine";
     list<myDefine*>* defineList=new list<myDefine*>;
@@ -145,4 +153,8 @@ list<myDefine*> mySql::queryDefine(){
             defineList->push_back(define);
         }
     }
+
+    return defineList;
 }
+
+

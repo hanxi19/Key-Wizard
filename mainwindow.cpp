@@ -1,8 +1,12 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+<<<<<<< HEAD
 #include"triger_widget.h"
 #include"set_widget.h"
 #include"add_widget.h"
+=======
+#include "POJO/keydefine.h"
+>>>>>>> 2bcd4692ab46971cfae5ced151c21124cf6e9ca2
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -28,18 +32,32 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
+<<<<<<< HEAD
 
 void MainWindow::on_triggerBtn_clicked()
 {
     ui->stackedWidget->setCurrentIndex(0);
+=======
+void MainWindow::on_triggerBtn_clicked()
+{
+
+>>>>>>> 2bcd4692ab46971cfae5ced151c21124cf6e9ca2
 }
 
 void MainWindow::on_addBtn_clicked()
 {
+<<<<<<< HEAD
     ui->stackedWidget->setCurrentIndex(1);
+=======
+
+>>>>>>> 2bcd4692ab46971cfae5ced151c21124cf6e9ca2
 }
 
 void MainWindow::on_setBtn_clicked()
 {
+<<<<<<< HEAD
     ui->stackedWidget->setCurrentIndex(2);
+=======
+
+>>>>>>> 2bcd4692ab46971cfae5ced151c21124cf6e9ca2
 }
