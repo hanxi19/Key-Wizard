@@ -4,6 +4,8 @@
 #include <QWidget>
 #include "save_success.h"
 #include "input_incomplete.h"
+#include "customize_key_and_interval.h"
+#include "..\POJO\keydefine.h"
 
 namespace Ui {
 class add_customize_widget;
@@ -25,6 +27,12 @@ private:
     Ui::add_customize_widget *ui;
     save_success* m_save ;
     input_incomplete* m_input_incomplete;
+    customize_key_and_interval* m_custom;
+    KeyDefine* m_key;
+
+private slots:
+    void SlotGetKey(QString str);
+    void SlotGetInterval(QString str);
 };
 
 #endif // ADD_CUSTOMIZE_WIDGET_H

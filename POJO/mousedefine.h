@@ -2,6 +2,7 @@
 #define MOUSEDEFINE_H
 #include "mydefine.h"
 #include <string>
+#include <data/mysql.h>
 using namespace std;
 class MouseDefine:public myDefine
 {

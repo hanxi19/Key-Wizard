@@ -28,6 +28,8 @@ SOURCES += \
     data/mysql.cpp \
     main.cpp \
     mainwindow.cpp \
+    myThread/definetrigerthread.cpp \
+    myThread/shortcutkeylistenthread.cpp \
     ui/add_customize_widget.cpp \
     ui/add_quickclick_widget.cpp \
     ui/add_record_widget.cpp \
@@ -36,7 +38,10 @@ SOURCES += \
     ui/input_incomplete.cpp \
     ui/save_success.cpp \
     ui/set_widget.cpp \
-    ui/triger_widget.cpp
+    ui/triger_widget.cpp \
+    util/myfile.cpp \
+    util/myjson.cpp \
+    util/winkeyhook.cpp
 
 HEADERS += \
     POJO/keydefine.h \
@@ -45,6 +50,8 @@ HEADERS += \
     applycation.h \
     data/mysql.h \
     mainwindow.h \
+    myThread/definetrigerthread.h \
+    myThread/shortcutkeylistenthread.h \
     ui/add_customize_widget.h \
     ui/add_quickclick_widget.h \
     ui/add_record_widget.h \
@@ -53,7 +60,10 @@ HEADERS += \
     ui/input_incomplete.h \
     ui/save_success.h \
     ui/set_widget.h \
-    ui/triger_widget.h
+    ui/triger_widget.h \
+    util/myfile.h \
+    util/myjson.h \
+    util/winkeyhook.h
 
 FORMS += \
     mainwindow.ui \
