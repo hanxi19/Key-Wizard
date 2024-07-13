@@ -18,6 +18,13 @@ public:
     explicit add_widget(QWidget *parent = nullptr);
     ~add_widget();
 
+private slots:
+    void on_recordBtn_clicked();
+
+    void on_customizeBtn_clicked();
+
+    void on_quickclickBtn_clicked();
+
 private:
     Ui::add_widget *ui;
     add_quickClick_widget* m_quickclick;

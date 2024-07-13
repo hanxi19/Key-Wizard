@@ -6,6 +6,9 @@
 #include "myThread/definetrigerthread.h"
 #include "applycation.h"
 #include <QDebug>
+#include"triger_widget.h"
+#include"set_widget.h"
+#include"add_widget.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }

@@ -31,20 +31,22 @@ triger_widget::triger_widget(QWidget *parent)
 
     QWidget *window =new QWidget(this);        //定义一个界面
     QVBoxLayout *mainlayout =new QVBoxLayout;  //创建垂直布局
-
+    QButtonGroup *group =new QButtonGroup;
     for(int i=0;i<3;i++)                       //有几段录制，循环显示几次？待定？用数字3测试
     {
 
     QHBoxLayout *layout=new QHBoxLayout;      //创建一行水平布局：显示每一行名称和是否选用按钮
 
     QLabel *label =new QLabel;
-    label->setText("录制名1");               //录制文件名仍然待定？？
+    label->setText("Recording files 1");               //录制文件名仍然待定？？
     setlabel(label);
     layout->addWidget(label);               //将label添加到水平布局中
 
-    QCheckBox *checkbox =new QCheckBox("禁用",this);
+    QCheckBox *checkbox =new QCheckBox(this);
     setcheckbox(checkbox);
     layout->addWidget(checkbox);            //将label添加到水平布局中
+
+    group->addButton(checkbox);
 
     layout->setSpacing(400);
     layout->setContentsMargins(10,10,10,10);
@@ -52,6 +54,7 @@ triger_widget::triger_widget(QWidget *parent)
     mainlayout->addLayout(layout);
 
 }
+    group->setExclusive(true);
     window->setLayout(mainlayout);
     window->show();
 
