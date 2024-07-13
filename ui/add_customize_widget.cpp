@@ -50,7 +50,9 @@ add_customize_widget::~add_customize_widget()
 void add_customize_widget::SlotGetKey(QString str)
 {
    //建议为setKeys加一个以String为参数的函数，否则类型转换非常麻烦
-   // m_key->setKeys(str.toStdString());
+
+    //这里可能出问题？ string没法直接转char，那只能取第一个字符了
+    m_key->setKeys(str.toStdString()[0]);
 }
 
 void add_customize_widget::SlotGetInterval(QString str)
