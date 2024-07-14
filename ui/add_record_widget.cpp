@@ -39,6 +39,7 @@ add_record_widget::add_record_widget(QWidget *parent) :
 
             m_key->setName(ui->nameEdit->text().toStdString());
             m_key->save();
+            ui->nameEdit->clear();
             emit add_record_widget::sendSaveSuccess();
         }
     });

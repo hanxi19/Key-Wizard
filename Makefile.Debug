@@ -420,6 +420,12 @@ debug/moc_mainwindow.cpp: mainwindow.h \
 		ui/no_name.h \
 		ui/add_quickclick_widget.h \
 		ui/add_record_widget.h \
+		ui/soft_keyboard.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/QMap \
+		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/QPushButton \
+		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/qpushbutton.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/QGridLayout \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/QKeySequence \
 		debug/moc_predefs.h \
 		D:/Qt/5.14.2/mingw73_64/bin/moc.exe
 	D:\Qt\5.14.2\mingw73_64\bin\moc.exe $(DEFINES) --include C:/Users/fuyuning/Key-Wizard/debug/moc_predefs.h -ID:/Qt/5.14.2/mingw73_64/mkspecs/win32-g++ -IC:/Users/fuyuning/Key-Wizard -IC:/Users/fuyuning/Key-Wizard/ui -ID:/Qt/5.14.2/mingw73_64/include -ID:/Qt/5.14.2/mingw73_64/include/QtWidgets -ID:/Qt/5.14.2/mingw73_64/include/QtGui -ID:/Qt/5.14.2/mingw73_64/include/QtANGLE -ID:/Qt/5.14.2/mingw73_64/include/QtSql -ID:/Qt/5.14.2/mingw73_64/include/QtCore -ID:/Qt/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++ -ID:/Qt/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/x86_64-w64-mingw32 -ID:/Qt/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/backward -ID:/Qt/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include -ID:/Qt/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include-fixed -ID:/Qt/Tools/mingw730_64/x86_64-w64-mingw32/include mainwindow.h -o debug\moc_mainwindow.cpp
@@ -571,6 +577,24 @@ debug/moc_add_customize_widget.cpp: ui/add_customize_widget.h \
 		D:/Qt/5.14.2/mingw73_64/include/QtSql/QSqlQuery \
 		D:/Qt/5.14.2/mingw73_64/include/QtSql/qsqlquery.h \
 		POJO/mousedefine.h \
+		applycation.h \
+		util/myfile.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/QFile \
+		util/myjson.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/QJsonObject \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qjsonobject.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qjsonvalue.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/QJsonArray \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qjsonarray.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/QJsonDocument \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qjsondocument.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/QJsonValue \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/QJsonParseError \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/QTextStream \
+		myThread/shortcutkeylistenthread.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/QThread \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qthread.h \
+		myThread/definetrigerthread.h \
 		ui/no_name.h \
 		debug/moc_predefs.h \
 		D:/Qt/5.14.2/mingw73_64/bin/moc.exe
@@ -798,6 +822,19 @@ debug/moc_add_record_widget.cpp: ui/add_record_widget.h \
 		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/QDialog \
 		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/qdialog.h \
 		ui/no_name.h \
+		ui/soft_keyboard.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/QMap \
+		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/QPushButton \
+		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/qpushbutton.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/qabstractbutton.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qicon.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/QGridLayout \
+		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/qgridlayout.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/qlayout.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/qlayoutitem.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/qboxlayout.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/QKeyEvent \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/QKeySequence \
 		debug/moc_predefs.h \
 		D:/Qt/5.14.2/mingw73_64/bin/moc.exe
 	D:\Qt\5.14.2\mingw73_64\bin\moc.exe $(DEFINES) --include C:/Users/fuyuning/Key-Wizard/debug/moc_predefs.h -ID:/Qt/5.14.2/mingw73_64/mkspecs/win32-g++ -IC:/Users/fuyuning/Key-Wizard -IC:/Users/fuyuning/Key-Wizard/ui -ID:/Qt/5.14.2/mingw73_64/include -ID:/Qt/5.14.2/mingw73_64/include/QtWidgets -ID:/Qt/5.14.2/mingw73_64/include/QtGui -ID:/Qt/5.14.2/mingw73_64/include/QtANGLE -ID:/Qt/5.14.2/mingw73_64/include/QtSql -ID:/Qt/5.14.2/mingw73_64/include/QtCore -ID:/Qt/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++ -ID:/Qt/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/x86_64-w64-mingw32 -ID:/Qt/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/backward -ID:/Qt/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include -ID:/Qt/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include-fixed -ID:/Qt/Tools/mingw730_64/x86_64-w64-mingw32/include ui\add_record_widget.h -o debug\moc_add_record_widget.cpp
@@ -950,9 +987,35 @@ debug/moc_add_widget.cpp: ui/add_widget.h \
 		D:/Qt/5.14.2/mingw73_64/include/QtSql/QSqlQuery \
 		D:/Qt/5.14.2/mingw73_64/include/QtSql/qsqlquery.h \
 		POJO/mousedefine.h \
+		applycation.h \
+		util/myfile.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/QFile \
+		util/myjson.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/QJsonObject \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qjsonobject.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qjsonvalue.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/QJsonArray \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qjsonarray.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/QJsonDocument \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qjsondocument.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/QJsonValue \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/QJsonParseError \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/QTextStream \
+		myThread/shortcutkeylistenthread.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/QThread \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qthread.h \
+		myThread/definetrigerthread.h \
 		ui/no_name.h \
 		ui/add_quickclick_widget.h \
 		ui/add_record_widget.h \
+		ui/soft_keyboard.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/QMap \
+		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/QPushButton \
+		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/qpushbutton.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/qabstractbutton.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qicon.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/QGridLayout \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/QKeySequence \
 		debug/moc_predefs.h \
 		D:/Qt/5.14.2/mingw73_64/bin/moc.exe
 	D:\Qt\5.14.2\mingw73_64\bin\moc.exe $(DEFINES) --include C:/Users/fuyuning/Key-Wizard/debug/moc_predefs.h -ID:/Qt/5.14.2/mingw73_64/mkspecs/win32-g++ -IC:/Users/fuyuning/Key-Wizard -IC:/Users/fuyuning/Key-Wizard/ui -ID:/Qt/5.14.2/mingw73_64/include -ID:/Qt/5.14.2/mingw73_64/include/QtWidgets -ID:/Qt/5.14.2/mingw73_64/include/QtGui -ID:/Qt/5.14.2/mingw73_64/include/QtANGLE -ID:/Qt/5.14.2/mingw73_64/include/QtSql -ID:/Qt/5.14.2/mingw73_64/include/QtCore -ID:/Qt/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++ -ID:/Qt/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/x86_64-w64-mingw32 -ID:/Qt/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/backward -ID:/Qt/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include -ID:/Qt/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include-fixed -ID:/Qt/Tools/mingw730_64/x86_64-w64-mingw32/include ui\add_widget.h -o debug\moc_add_widget.cpp
@@ -1772,6 +1835,13 @@ debug/moc_soft_keyboard.cpp: ui/soft_keyboard.h \
 		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/qpushbutton.h \
 		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/qabstractbutton.h \
 		D:/Qt/5.14.2/mingw73_64/include/QtGui/qicon.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/QGridLayout \
+		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/qgridlayout.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/qlayout.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/qlayoutitem.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/qboxlayout.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/QKeyEvent \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/QKeySequence \
 		debug/moc_predefs.h \
 		D:/Qt/5.14.2/mingw73_64/bin/moc.exe
 	D:\Qt\5.14.2\mingw73_64\bin\moc.exe $(DEFINES) --include C:/Users/fuyuning/Key-Wizard/debug/moc_predefs.h -ID:/Qt/5.14.2/mingw73_64/mkspecs/win32-g++ -IC:/Users/fuyuning/Key-Wizard -IC:/Users/fuyuning/Key-Wizard/ui -ID:/Qt/5.14.2/mingw73_64/include -ID:/Qt/5.14.2/mingw73_64/include/QtWidgets -ID:/Qt/5.14.2/mingw73_64/include/QtGui -ID:/Qt/5.14.2/mingw73_64/include/QtANGLE -ID:/Qt/5.14.2/mingw73_64/include/QtSql -ID:/Qt/5.14.2/mingw73_64/include/QtCore -ID:/Qt/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++ -ID:/Qt/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/x86_64-w64-mingw32 -ID:/Qt/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/backward -ID:/Qt/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include -ID:/Qt/Tools/mingw730_64/lib/gcc/x86_64-w64-mingw32/7.3.0/include-fixed -ID:/Qt/Tools/mingw730_64/x86_64-w64-mingw32/include ui\soft_keyboard.h -o debug\moc_soft_keyboard.cpp
@@ -2068,7 +2138,71 @@ debug/keydefine.o: POJO/keydefine.cpp POJO/keydefine.h \
 		D:/Qt/5.14.2/mingw73_64/include/QtSql/qsqlerror.h \
 		D:/Qt/5.14.2/mingw73_64/include/QtSql/QSqlQuery \
 		D:/Qt/5.14.2/mingw73_64/include/QtSql/qsqlquery.h \
-		POJO/mousedefine.h
+		POJO/mousedefine.h \
+		applycation.h \
+		util/myfile.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/QFile \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qfile.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qfiledevice.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/QApplication \
+		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/qapplication.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/qtwidgetsglobal.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qtguiglobal.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qtgui-config.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/qtwidgets-config.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qcoreapplication.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qeventloop.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qwindowdefs.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qwindowdefs_win.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qsize.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qmargins.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qcursor.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/qdesktopwidget.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/qwidget.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qpaintdevice.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qrect.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qpalette.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qcolor.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qrgb.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qrgba64.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qbrush.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qmatrix.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qpolygon.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qregion.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qdatastream.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qline.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qtransform.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qpainterpath.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qimage.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qpixelformat.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qpixmap.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qfont.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qfontmetrics.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qfontinfo.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/qsizepolicy.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qkeysequence.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qevent.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qurl.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qurlquery.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qvector2d.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qtouchdevice.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qguiapplication.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qinputmethod.h \
+		util/myjson.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/QJsonObject \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qjsonobject.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qjsonvalue.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/QJsonArray \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qjsonarray.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/QJsonDocument \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qjsondocument.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/QJsonValue \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/QJsonParseError \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/QTextStream \
+		myThread/shortcutkeylistenthread.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/QThread \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qthread.h \
+		myThread/definetrigerthread.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\keydefine.o POJO\keydefine.cpp
 
 debug/mousedefine.o: POJO/mousedefine.cpp POJO/mousedefine.h \
@@ -2148,7 +2282,71 @@ debug/mousedefine.o: POJO/mousedefine.cpp POJO/mousedefine.h \
 		D:/Qt/5.14.2/mingw73_64/include/QtCore/qsharedpointer.h \
 		D:/Qt/5.14.2/mingw73_64/include/QtCore/qsharedpointer_impl.h \
 		POJO/keydefine.h \
-		D:/Qt/5.14.2/mingw73_64/include/QtCore/QString
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/QString \
+		applycation.h \
+		util/myfile.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/QFile \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qfile.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qfiledevice.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/QApplication \
+		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/qapplication.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/qtwidgetsglobal.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qtguiglobal.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qtgui-config.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/qtwidgets-config.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qcoreapplication.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qeventloop.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qwindowdefs.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qwindowdefs_win.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qsize.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qmargins.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qcursor.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/qdesktopwidget.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/qwidget.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qpaintdevice.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qrect.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qpalette.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qcolor.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qrgb.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qrgba64.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qbrush.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qmatrix.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qpolygon.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qregion.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qdatastream.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qline.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qtransform.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qpainterpath.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qimage.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qpixelformat.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qpixmap.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qfont.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qfontmetrics.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qfontinfo.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/qsizepolicy.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qkeysequence.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qevent.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qurl.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qurlquery.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qvector2d.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qtouchdevice.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qguiapplication.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qinputmethod.h \
+		util/myjson.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/QJsonObject \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qjsonobject.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qjsonvalue.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/QJsonArray \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qjsonarray.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/QJsonDocument \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qjsondocument.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/QJsonValue \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/QJsonParseError \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/QTextStream \
+		myThread/shortcutkeylistenthread.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/QThread \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qthread.h \
+		myThread/definetrigerthread.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\mousedefine.o POJO\mousedefine.cpp
 
 debug/mydefine.o: POJO/mydefine.cpp POJO/mydefine.h
@@ -2375,10 +2573,72 @@ debug/mysql.o: data/mysql.cpp data/mysql.h \
 		POJO/mydefine.h \
 		POJO/keydefine.h \
 		D:/Qt/5.14.2/mingw73_64/include/QtCore/QString \
-		POJO/mousedefine.h \
-		D:/Qt/5.14.2/mingw73_64/include/QtCore/QCoreApplication \
+		applycation.h \
+		util/myfile.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/QFile \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qfile.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qfiledevice.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/QApplication \
+		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/qapplication.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/qtwidgetsglobal.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qtguiglobal.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qtgui-config.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/qtwidgets-config.h \
 		D:/Qt/5.14.2/mingw73_64/include/QtCore/qcoreapplication.h \
-		D:/Qt/5.14.2/mingw73_64/include/QtCore/qeventloop.h
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qeventloop.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qwindowdefs.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qwindowdefs_win.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qsize.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qmargins.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qcursor.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/qdesktopwidget.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/qwidget.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qpaintdevice.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qrect.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qpalette.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qcolor.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qrgb.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qrgba64.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qbrush.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qmatrix.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qpolygon.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qregion.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qdatastream.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qline.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qtransform.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qpainterpath.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qimage.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qpixelformat.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qpixmap.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qfont.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qfontmetrics.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qfontinfo.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/qsizepolicy.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qkeysequence.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qevent.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qurl.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qurlquery.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qvector2d.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qtouchdevice.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qguiapplication.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qinputmethod.h \
+		util/myjson.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/QJsonObject \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qjsonobject.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qjsonvalue.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/QJsonArray \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qjsonarray.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/QJsonDocument \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qjsondocument.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/QJsonValue \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/QJsonParseError \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/QTextStream \
+		myThread/shortcutkeylistenthread.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/QThread \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qthread.h \
+		myThread/definetrigerthread.h \
+		POJO/mousedefine.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/QCoreApplication
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\mysql.o data\mysql.cpp
 
 debug/main.o: main.cpp mainwindow.h \
@@ -2580,7 +2840,13 @@ debug/main.o: main.cpp mainwindow.h \
 		D:/Qt/5.14.2/mingw73_64/include/QtGui/QKeyEvent \
 		ui/no_name.h \
 		ui/add_quickclick_widget.h \
-		ui/add_record_widget.h
+		ui/add_record_widget.h \
+		ui/soft_keyboard.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/QMap \
+		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/QPushButton \
+		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/qpushbutton.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/QGridLayout \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/QKeySequence
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\main.o main.cpp
 
 debug/mainwindow.o: mainwindow.cpp mainwindow.h \
@@ -2783,6 +3049,12 @@ debug/mainwindow.o: mainwindow.cpp mainwindow.h \
 		ui/no_name.h \
 		ui/add_quickclick_widget.h \
 		ui/add_record_widget.h \
+		ui/soft_keyboard.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/QMap \
+		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/QPushButton \
+		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/qpushbutton.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/QGridLayout \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/QKeySequence \
 		ui_mainwindow.h \
 		D:/Qt/5.14.2/mingw73_64/include/QtCore/QVariant \
 		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/QMenuBar \
@@ -2790,8 +3062,6 @@ debug/mainwindow.o: mainwindow.cpp mainwindow.h \
 		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/qmenu.h \
 		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/qaction.h \
 		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/qactiongroup.h \
-		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/QPushButton \
-		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/qpushbutton.h \
 		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/QStackedWidget \
 		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/qstackedwidget.h \
 		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/QStatusBar \
@@ -2878,7 +3148,68 @@ debug/definetrigerthread.o: myThread/definetrigerthread.cpp myThread/definetrige
 		D:/Qt/5.14.2/mingw73_64/include/QtSql/qsqlerror.h \
 		D:/Qt/5.14.2/mingw73_64/include/QtSql/QSqlQuery \
 		D:/Qt/5.14.2/mingw73_64/include/QtSql/qsqlquery.h \
-		POJO/mousedefine.h
+		POJO/mousedefine.h \
+		applycation.h \
+		util/myfile.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/QFile \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qfile.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qfiledevice.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/QApplication \
+		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/qapplication.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/qtwidgetsglobal.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qtguiglobal.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qtgui-config.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/qtwidgets-config.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qcoreapplication.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qeventloop.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qwindowdefs.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qwindowdefs_win.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qsize.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qmargins.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qcursor.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/qdesktopwidget.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/qwidget.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qpaintdevice.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qrect.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qpalette.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qcolor.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qrgb.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qrgba64.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qbrush.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qmatrix.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qpolygon.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qregion.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qdatastream.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qline.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qtransform.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qpainterpath.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qimage.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qpixelformat.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qpixmap.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qfont.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qfontmetrics.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qfontinfo.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/qsizepolicy.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qkeysequence.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qevent.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qurl.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qurlquery.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qvector2d.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qtouchdevice.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qguiapplication.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qinputmethod.h \
+		util/myjson.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/QJsonObject \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qjsonobject.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qjsonvalue.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/QJsonArray \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qjsonarray.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/QJsonDocument \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qjsondocument.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/QJsonValue \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/QJsonParseError \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/QTextStream \
+		myThread/shortcutkeylistenthread.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\definetrigerthread.o myThread\definetrigerthread.cpp
 
 debug/shortcutkeylistenthread.o: myThread/shortcutkeylistenthread.cpp myThread/shortcutkeylistenthread.h \
@@ -2962,7 +3293,67 @@ debug/shortcutkeylistenthread.o: myThread/shortcutkeylistenthread.cpp myThread/s
 		D:/Qt/5.14.2/mingw73_64/include/QtSql/qsqlerror.h \
 		D:/Qt/5.14.2/mingw73_64/include/QtSql/QSqlQuery \
 		D:/Qt/5.14.2/mingw73_64/include/QtSql/qsqlquery.h \
-		POJO/mousedefine.h
+		POJO/mousedefine.h \
+		applycation.h \
+		util/myfile.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/QFile \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qfile.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qfiledevice.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/QApplication \
+		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/qapplication.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/qtwidgetsglobal.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qtguiglobal.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qtgui-config.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/qtwidgets-config.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qcoreapplication.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qeventloop.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qwindowdefs.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qwindowdefs_win.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qsize.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qmargins.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qcursor.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/qdesktopwidget.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/qwidget.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qpaintdevice.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qrect.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qpalette.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qcolor.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qrgb.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qrgba64.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qbrush.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qmatrix.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qpolygon.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qregion.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qdatastream.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qline.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qtransform.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qpainterpath.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qimage.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qpixelformat.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qpixmap.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qfont.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qfontmetrics.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qfontinfo.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/qsizepolicy.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qkeysequence.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qevent.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qurl.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qurlquery.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qvector2d.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qtouchdevice.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qguiapplication.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qinputmethod.h \
+		util/myjson.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/QJsonObject \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qjsonobject.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qjsonvalue.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/QJsonArray \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qjsonarray.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/QJsonDocument \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qjsondocument.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/QJsonValue \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/QJsonParseError \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/QTextStream
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\shortcutkeylistenthread.o myThread\shortcutkeylistenthread.cpp
 
 debug/add_customize_widget.o: ui/add_customize_widget.cpp ui/add_customize_widget.h \
@@ -3112,6 +3503,24 @@ debug/add_customize_widget.o: ui/add_customize_widget.cpp ui/add_customize_widge
 		D:/Qt/5.14.2/mingw73_64/include/QtSql/QSqlQuery \
 		D:/Qt/5.14.2/mingw73_64/include/QtSql/qsqlquery.h \
 		POJO/mousedefine.h \
+		applycation.h \
+		util/myfile.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/QFile \
+		util/myjson.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/QJsonObject \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qjsonobject.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qjsonvalue.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/QJsonArray \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qjsonarray.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/QJsonDocument \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qjsondocument.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/QJsonValue \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/QJsonParseError \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/QTextStream \
+		myThread/shortcutkeylistenthread.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/QThread \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qthread.h \
+		myThread/definetrigerthread.h \
 		ui/no_name.h \
 		ui_add_customize_widget.h \
 		D:/Qt/5.14.2/mingw73_64/include/QtCore/QVariant \
@@ -3272,7 +3681,25 @@ debug/add_quickclick_widget.o: ui/add_quickclick_widget.cpp ui/add_quickclick_wi
 		D:/Qt/5.14.2/mingw73_64/include/QtSql/qsqlquery.h \
 		D:/Qt/5.14.2/mingw73_64/include/QtCore/QDebug \
 		POJO/keydefine.h \
-		D:/Qt/5.14.2/mingw73_64/include/QtCore/QString
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/QString \
+		applycation.h \
+		util/myfile.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/QFile \
+		util/myjson.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/QJsonObject \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qjsonobject.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qjsonvalue.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/QJsonArray \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qjsonarray.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/QJsonDocument \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qjsondocument.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/QJsonValue \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/QJsonParseError \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/QTextStream \
+		myThread/shortcutkeylistenthread.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/QThread \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qthread.h \
+		myThread/definetrigerthread.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\add_quickclick_widget.o ui\add_quickclick_widget.cpp
 
 debug/add_record_widget.o: ui/add_record_widget.cpp ui/add_record_widget.h \
@@ -3384,6 +3811,19 @@ debug/add_record_widget.o: ui/add_record_widget.cpp ui/add_record_widget.h \
 		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/QDialog \
 		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/qdialog.h \
 		ui/no_name.h \
+		ui/soft_keyboard.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/QMap \
+		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/QPushButton \
+		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/qpushbutton.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/qabstractbutton.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qicon.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/QGridLayout \
+		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/qgridlayout.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/qlayout.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/qlayoutitem.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/qboxlayout.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/QKeyEvent \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/QKeySequence \
 		ui_add_record_widget.h \
 		D:/Qt/5.14.2/mingw73_64/include/QtCore/QVariant \
 		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/QApplication \
@@ -3402,10 +3842,6 @@ debug/add_record_widget.o: ui/add_record_widget.cpp ui/add_record_widget.h \
 		D:/Qt/5.14.2/mingw73_64/include/QtGui/qtextformat.h \
 		D:/Qt/5.14.2/mingw73_64/include/QtGui/qpen.h \
 		D:/Qt/5.14.2/mingw73_64/include/QtGui/qtextoption.h \
-		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/QPushButton \
-		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/qpushbutton.h \
-		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/qabstractbutton.h \
-		D:/Qt/5.14.2/mingw73_64/include/QtGui/qicon.h \
 		POJO/keydefine.h \
 		POJO/mydefine.h \
 		D:/Qt/5.14.2/mingw73_64/include/QtCore/QDebug \
@@ -3419,7 +3855,25 @@ debug/add_record_widget.o: ui/add_record_widget.cpp ui/add_record_widget.h \
 		D:/Qt/5.14.2/mingw73_64/include/QtSql/qsqlerror.h \
 		D:/Qt/5.14.2/mingw73_64/include/QtSql/QSqlQuery \
 		D:/Qt/5.14.2/mingw73_64/include/QtSql/qsqlquery.h \
-		POJO/mousedefine.h
+		POJO/mousedefine.h \
+		applycation.h \
+		util/myfile.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/QFile \
+		util/myjson.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/QJsonObject \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qjsonobject.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qjsonvalue.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/QJsonArray \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qjsonarray.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/QJsonDocument \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qjsondocument.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/QJsonValue \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/QJsonParseError \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/QTextStream \
+		myThread/shortcutkeylistenthread.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/QThread \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qthread.h \
+		myThread/definetrigerthread.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\add_record_widget.o ui\add_record_widget.cpp
 
 debug/add_widget.o: ui/add_widget.cpp ui/add_widget.h \
@@ -3570,15 +4024,37 @@ debug/add_widget.o: ui/add_widget.cpp ui/add_widget.h \
 		D:/Qt/5.14.2/mingw73_64/include/QtSql/QSqlQuery \
 		D:/Qt/5.14.2/mingw73_64/include/QtSql/qsqlquery.h \
 		POJO/mousedefine.h \
+		applycation.h \
+		util/myfile.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/QFile \
+		util/myjson.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/QJsonObject \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qjsonobject.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qjsonvalue.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/QJsonArray \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qjsonarray.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/QJsonDocument \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qjsondocument.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/QJsonValue \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/QJsonParseError \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/QTextStream \
+		myThread/shortcutkeylistenthread.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/QThread \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qthread.h \
+		myThread/definetrigerthread.h \
 		ui/no_name.h \
 		ui/add_quickclick_widget.h \
 		ui/add_record_widget.h \
-		ui_add_widget.h \
-		D:/Qt/5.14.2/mingw73_64/include/QtCore/QVariant \
+		ui/soft_keyboard.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/QMap \
 		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/QPushButton \
 		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/qpushbutton.h \
 		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/qabstractbutton.h \
 		D:/Qt/5.14.2/mingw73_64/include/QtGui/qicon.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/QGridLayout \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/QKeySequence \
+		ui_add_widget.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/QVariant \
 		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/QStackedWidget \
 		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/qstackedwidget.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\add_widget.o ui\add_widget.cpp
@@ -4462,14 +4938,22 @@ debug/soft_keyboard.o: ui/soft_keyboard.cpp ui/soft_keyboard.h \
 		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/qpushbutton.h \
 		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/qabstractbutton.h \
 		D:/Qt/5.14.2/mingw73_64/include/QtGui/qicon.h \
-		ui_soft_keyboard.h \
 		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/QGridLayout \
 		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/qgridlayout.h \
 		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/qlayout.h \
 		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/qlayoutitem.h \
 		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/qboxlayout.h \
 		D:/Qt/5.14.2/mingw73_64/include/QtGui/QKeyEvent \
-		D:/Qt/5.14.2/mingw73_64/include/QtGui/QKeySequence
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/QKeySequence \
+		ui_soft_keyboard.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/QVariant \
+		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/QApplication \
+		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/qapplication.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qcoreapplication.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtCore/qeventloop.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtWidgets/qdesktopwidget.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qguiapplication.h \
+		D:/Qt/5.14.2/mingw73_64/include/QtGui/qinputmethod.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\soft_keyboard.o ui\soft_keyboard.cpp
 
 debug/triger_widget.o: ui/triger_widget.cpp ui/triger_widget.h \

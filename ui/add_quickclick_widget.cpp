@@ -55,6 +55,9 @@ add_quickClick_widget::add_quickClick_widget(QWidget *parent) :
             m_mouse->setName(ui->nameEdit->text().toStdString());
 
             m_mouse->save();
+            ui->nameEdit->clear();
+            ui->intervalEdit->clear();
+            ui->buttonBtn->setText(nullptr);
             emit add_quickClick_widget::sendSaveSuccess();
         }
     });

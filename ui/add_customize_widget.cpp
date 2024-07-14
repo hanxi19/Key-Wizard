@@ -41,6 +41,7 @@ add_customize_widget::add_customize_widget(QWidget *parent) :
         else{
             m_key->setName(str.toStdString());
             m_key->save();
+            ui->nameEdit->clear();
             emit add_customize_widget::sendSaveSuccess();
         }
     });
