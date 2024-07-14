@@ -3,6 +3,7 @@
 #include <QMenu>
 #include <QIntValidator>
 #include "..\POJO\mousedefine.h"
+#include "input_incomplete.h"
 
 add_quickClick_widget::add_quickClick_widget(QWidget *parent) :
     QWidget(parent),
@@ -10,6 +11,7 @@ add_quickClick_widget::add_quickClick_widget(QWidget *parent) :
 {
     ui->setupUi(this);
     MouseDefine* m_mouse = new MouseDefine;
+    m_input_incomplete = new input_incomplete;
     //选择按键类型
 
     QMenu* menu = new QMenu;
@@ -40,10 +42,18 @@ add_quickClick_widget::add_quickClick_widget(QWidget *parent) :
 
     connect(ui->saveBtn, &QPushButton::clicked, this, [=]()
     {
-        m_mouse->setTime(ui->intervalEdit->text().toInt());
-        m_mouse->setName(ui->nameEdit->text().toStdString());
-        m_mouse->save();
-        emit add_quickClick_widget::sendSaveSuccess();
+        QString str1 = ui->intervalEdit->text();
+        QString str2 = ui->nameEdit->text();
+        if(str1 == nullptr || str2 == nullptr){
+            m_input_incomplete->show();
+        }else{
+
+            m_mouse->setTime(ui->intervalEdit->text().toInt());
+            m_mouse->setName(ui->nameEdit->text().toStdString());
+
+            m_mouse->save();
+            emit add_quickClick_widget::sendSaveSuccess();
+        }
     });
 
 

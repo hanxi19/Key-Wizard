@@ -11,12 +11,12 @@ add_record_widget::add_record_widget(QWidget *parent) :
     connect(ui->startBtn, &QPushButton::clicked, this, [=]()
     {
         //录制
-        //m_key->record();
+        m_key->regord();
     });
     connect(ui->endBtn, &QPushButton::clicked, this, [=]()
     {
         //结束录制
-        //m_key->end();
+        m_key->end();
     });
     connect(ui->saveBtn, &QPushButton::clicked, this, [=]()
     {

@@ -1,6 +1,5 @@
 #ifndef SAVE_SUCCESS_H
 #define SAVE_SUCCESS_H
-
 #include <QDialog>
 
 namespace Ui {
@@ -21,5 +20,6 @@ private slots:
 private:
     Ui::save_success *ui;
 };
+
 
 #endif // SAVE_SUCCESS_H

@@ -3,6 +3,7 @@
 
 #include <QWidget>
 #include "save_success.h"
+#include "input_incomplete.h"
 
 namespace Ui {
 class add_quickClick_widget;
@@ -27,7 +28,7 @@ signals:
     void sendSaveSuccess();
 private:
     Ui::add_quickClick_widget *ui;
-
+    input_incomplete* m_input_incomplete;
     save_success* m_save ;
 };
 

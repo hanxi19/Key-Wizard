@@ -10,10 +10,19 @@ KeyEchoLineEdit::KeyEchoLineEdit(QWidget *parent)
 void KeyEchoLineEdit::keyPressEvent(QKeyEvent *event) {
     //记录按下的按键
     int key = event->key();
+    QString keyText;
     //忽略单个修饰键
     if (event->modifiers() != Qt::NoModifier && key == 0) {
         return;
     }
+    Qt::KeyboardModifiers modifiers = event->modifiers();
+    if(modifiers == Qt::NoModifier){
+        keyText = QKeySequence(key).toString(QKeySequence::PortableText);
+    }else{
+
+     keyText = QKeySequence(modifiers + key).toString(QKeySequence::PortableText);
+    }
+    setText(keyText);
     //将按键转换为ascii码并保存
     if (key < 128) {
            asciiCode = static_cast<char>(key);
@@ -21,8 +30,7 @@ void KeyEchoLineEdit::keyPressEvent(QKeyEvent *event) {
            asciiCode = 0;
        }
     // 将QlineEdit中的文本转换为ascii码
-    setText(QString::number(key));
-    label->setText(QString::number(key)); // Display in QLabel for better visibility（回显？）
+
 
     QLineEdit::keyPressEvent(event);
 }
