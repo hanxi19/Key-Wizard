@@ -91,6 +91,7 @@ void KeyDefine::setTimes(vector<int> times){
 void KeyDefine::save(){
     mySql sql;
     sql.insertDefine(this);
+    Applycation::addDefine(this);
 }
 HHOOK KeyDefine::keyboardHook = NULL;
 DWORD KeyDefine::lastKeyUpTick = 0;

@@ -64,3 +64,7 @@ int Applycation::getEndKey(){
 vector<myDefine*>* Applycation::getDefineList(){
     return defineList;
 }
+
+void Applycation::addDefine(myDefine *define){
+    defineList->push_back(define);
+}

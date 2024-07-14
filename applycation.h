@@ -16,6 +16,7 @@ public:
     static vector<myDefine*>* getDefineList();
     static void setStartKey(int key);
     static void setEndKey(int key);
+    static void addDefine(myDefine* define);
 private:
     Applycation();
     static int startKey;

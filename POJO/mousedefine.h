@@ -3,6 +3,7 @@
 #include "mydefine.h"
 #include <string>
 #include <data/mysql.h>
+#include"applycation.h"
 using namespace std;
 class MouseDefine:public myDefine
 {

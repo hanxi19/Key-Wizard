@@ -9,6 +9,7 @@
 #include<QDebug>
 #include<QString>
 #include<data/mysql.h>
+#include"applycation.h"
 using namespace std;
 class KeyDefine:public myDefine{
 public:
