@@ -40,6 +40,7 @@ SOURCES += \
     ui/no_name.cpp \
     ui/save_success.cpp \
     ui/set_widget.cpp \
+    ui/soft_keyboard.cpp \
     ui/triger_widget.cpp \
     util/myfile.cpp \
     util/myjson.cpp \
@@ -64,6 +65,7 @@ HEADERS += \
     ui/no_name.h \
     ui/save_success.h \
     ui/set_widget.h \
+    ui/soft_keyboard.h \
     ui/triger_widget.h \
     util/myfile.h \
     util/myjson.h \
@@ -80,6 +82,7 @@ FORMS += \
     ui/no_name.ui \
     ui/save_success.ui \
     ui/set_widget.ui \
+    ui/soft_keyboard.ui \
     ui/triger_widget.ui
 
 # Default rules for deployment.
