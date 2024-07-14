@@ -36,6 +36,8 @@ SOURCES += \
     ui/add_widget.cpp \
     ui/customize_key_and_interval.cpp \
     ui/input_incomplete.cpp \
+    ui/keyecholineedit.cpp \
+    ui/no_name.cpp \
     ui/save_success.cpp \
     ui/set_widget.cpp \
     ui/triger_widget.cpp \
@@ -58,6 +60,8 @@ HEADERS += \
     ui/add_widget.h \
     ui/customize_key_and_interval.h \
     ui/input_incomplete.h \
+    ui/keyecholineedit.h \
+    ui/no_name.h \
     ui/save_success.h \
     ui/set_widget.h \
     ui/triger_widget.h \
@@ -73,6 +77,7 @@ FORMS += \
     ui/add_widget.ui \
     ui/customize_key_and_interval.ui \
     ui/input_incomplete.ui \
+    ui/no_name.ui \
     ui/save_success.ui \
     ui/set_widget.ui \
     ui/triger_widget.ui

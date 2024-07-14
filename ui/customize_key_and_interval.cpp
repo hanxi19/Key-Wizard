@@ -12,14 +12,14 @@ customize_key_and_interval::customize_key_and_interval(QWidget *parent) :
     ui->setupUi(this);
 
     m_incomplete = new input_incomplete;
-    QWidget *centralWidget = new QWidget(this); //需要去掉？
-    QVBoxLayout *layout = new QVBoxLayout(centralWidget);
+    //QWidget *centralWidget = new QWidget(this); //需要去掉？
+    //QVBoxLayout *layout = new QVBoxLayout(centralWidget);
 
     // 创建 KeyEchoLineEdit 并设置为与 QLineEdit 相同的位置和大小
     buttonEdit->setPlaceholderText("Press any key...");
     buttonEdit->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Fixed);
-    layout->addWidget(buttonEdit);
-    buttonEdit->setGeometry(80, 40, 171, 31);
+    //layout->addWidget(buttonEdit);
+    buttonEdit->setGeometry(130, 60, 231, 41);
 
 }
 
@@ -39,4 +39,5 @@ void customize_key_and_interval::on_completeBtn_clicked()
         emit SignalSendKey(str1);
         emit SignalSendInterval(str2);
     }
+    this->close();
 }

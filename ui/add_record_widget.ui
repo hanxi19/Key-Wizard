@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>547</width>
+    <height>347</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -18,9 +18,15 @@
     <rect>
      <x>23</x>
      <y>29</y>
-     <width>71</width>
-     <height>31</height>
+     <width>91</width>
+     <height>61</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Agency FB</family>
+     <pointsize>11</pointsize>
+    </font>
    </property>
    <property name="text">
     <string>  名称</string>
@@ -31,18 +37,18 @@
     <rect>
      <x>120</x>
      <y>30</y>
-     <width>191</width>
-     <height>31</height>
+     <width>281</width>
+     <height>61</height>
     </rect>
    </property>
   </widget>
   <widget class="QPushButton" name="startBtn">
    <property name="geometry">
     <rect>
-     <x>20</x>
+     <x>30</x>
      <y>220</y>
-     <width>111</width>
-     <height>41</height>
+     <width>141</width>
+     <height>51</height>
     </rect>
    </property>
    <property name="text">
@@ -52,10 +58,10 @@
   <widget class="QPushButton" name="endBtn">
    <property name="geometry">
     <rect>
-     <x>140</x>
+     <x>170</x>
      <y>220</y>
-     <width>111</width>
-     <height>41</height>
+     <width>141</width>
+     <height>51</height>
     </rect>
    </property>
    <property name="text">
@@ -65,10 +71,10 @@
   <widget class="QPushButton" name="saveBtn">
    <property name="geometry">
     <rect>
-     <x>260</x>
+     <x>310</x>
      <y>220</y>
-     <width>111</width>
-     <height>41</height>
+     <width>151</width>
+     <height>51</height>
     </rect>
    </property>
    <property name="text">

@@ -2,6 +2,7 @@
 #include "ui_add_customize_widget.h"
 #include "..\POJO\keydefine.h"
 #include "save_success.h"
+
 add_customize_widget::add_customize_widget(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::add_customize_widget)
@@ -9,6 +10,7 @@ add_customize_widget::add_customize_widget(QWidget *parent) :
     ui->setupUi(this);
     m_custom = new customize_key_and_interval;
     m_key = new KeyDefine;
+    m_name = new no_name;
 
     //按下添加按钮，弹出customize_key_and_interval窗口
 
@@ -30,9 +32,17 @@ add_customize_widget::add_customize_widget(QWidget *parent) :
     //保存
     connect(ui->saveBtn, &QPushButton::clicked, this, [=]()
     {
-        m_key->setName(ui->nameEdit->text().toStdString());
-        m_key->save();
-        emit add_customize_widget::sendSaveSuccess();
+        //m_key->setName(ui->nameEdit->text().toStdString());
+        //添加了名称为空时的弹出窗口
+        QString str = ui->nameEdit->text();
+        if(str == nullptr){
+            m_name->show();
+        }
+        else{
+            m_key->setName(str.toStdString());
+            m_key->save();
+            emit add_customize_widget::sendSaveSuccess();
+        }
     });
 
     m_save = new save_success();

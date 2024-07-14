@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>538</width>
+    <height>308</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,21 +16,27 @@
   <widget class="QLineEdit" name="nameEdit">
    <property name="geometry">
     <rect>
-     <x>90</x>
-     <y>40</y>
-     <width>201</width>
-     <height>31</height>
+     <x>100</x>
+     <y>60</y>
+     <width>311</width>
+     <height>71</height>
     </rect>
    </property>
   </widget>
   <widget class="QLabel" name="nameLabel">
    <property name="geometry">
     <rect>
-     <x>23</x>
-     <y>39</y>
-     <width>71</width>
-     <height>31</height>
+     <x>20</x>
+     <y>70</y>
+     <width>101</width>
+     <height>51</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Agency FB</family>
+     <pointsize>12</pointsize>
+    </font>
    </property>
    <property name="text">
     <string>  名称</string>
@@ -39,11 +45,17 @@
   <widget class="QPushButton" name="addBtn">
    <property name="geometry">
     <rect>
-     <x>300</x>
-     <y>50</y>
-     <width>80</width>
-     <height>20</height>
+     <x>410</x>
+     <y>70</y>
+     <width>121</width>
+     <height>51</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Agency FB</family>
+     <pointsize>11</pointsize>
+    </font>
    </property>
    <property name="text">
     <string>添加按键</string>
@@ -52,10 +64,10 @@
   <widget class="QPushButton" name="saveBtn">
    <property name="geometry">
     <rect>
-     <x>99</x>
-     <y>259</y>
-     <width>191</width>
-     <height>21</height>
+     <x>80</x>
+     <y>200</y>
+     <width>371</width>
+     <height>91</height>
     </rect>
    </property>
    <property name="text">

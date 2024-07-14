@@ -6,6 +6,7 @@
 #include "input_incomplete.h"
 #include "customize_key_and_interval.h"
 #include "..\POJO\keydefine.h"
+#include "no_name.h"
 
 namespace Ui {
 class add_customize_widget;
@@ -29,6 +30,7 @@ private:
     input_incomplete* m_input_incomplete;
     customize_key_and_interval* m_custom;
     KeyDefine* m_key;
+    no_name* m_name;
 
 private slots:
     void SlotGetKey(char c);
