@@ -3,6 +3,7 @@
 
 #include <QDialog>
 #include "input_incomplete.h"
+#include "keyecholineedit.h"
 
 namespace Ui {
 class customize_key_and_interval;
@@ -22,8 +23,9 @@ private slots:
 private:
     Ui::customize_key_and_interval *ui;
     input_incomplete* m_incomplete;
+    KeyEchoLineEdit* buttonEdit;
 signals:
-    void SignalSendKey(QString);
+    void SignalSendKey(char);
     void SignalSendInterval(QString);
 };
 
