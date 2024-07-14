@@ -61,7 +61,7 @@
     <string>保存</string>
    </property>
   </widget>
-  <widget class="QToolButton" name="buttonBtn">
+  <widget class="QPushButton" name="buttonBtn">
    <property name="geometry">
     <rect>
      <x>240</x>
@@ -71,7 +71,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>...</string>
+    <string>选择</string>
    </property>
   </widget>
   <widget class="QLabel" name="nameLabel">
