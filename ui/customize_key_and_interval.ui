@@ -39,16 +39,6 @@
     <string>  间隔(ms)</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="buttonEdit">
-   <property name="geometry">
-    <rect>
-     <x>80</x>
-     <y>40</y>
-     <width>171</width>
-     <height>31</height>
-    </rect>
-   </property>
-  </widget>
   <widget class="QLineEdit" name="intervalEdit">
    <property name="geometry">
     <rect>

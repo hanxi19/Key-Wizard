@@ -31,7 +31,7 @@ private:
     KeyDefine* m_key;
 
 private slots:
-    void SlotGetKey(QString str);
+    void SlotGetKey(char c);
     void SlotGetInterval(QString str);
 };
 

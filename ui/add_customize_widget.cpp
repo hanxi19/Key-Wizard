@@ -9,7 +9,7 @@ add_customize_widget::add_customize_widget(QWidget *parent) :
     ui->setupUi(this);
     m_custom = new customize_key_and_interval;
     m_key = new KeyDefine;
-    //未完成：
+
     //按下添加按钮，弹出customize_key_and_interval窗口
 
     //输入按键和时间间隔
@@ -23,7 +23,7 @@ add_customize_widget::add_customize_widget(QWidget *parent) :
     {
         m_custom->show();
     });
-    connect(m_custom, SIGNAL(SignalSendKey(QString)), this, SLOT(SlotGetKey(QString)));
+    connect(m_custom, SIGNAL(SignalSendKey(char)), this, SLOT(SlotGetKey(char)));
     connect(m_custom, SIGNAL(SignalSendInterval(QString)), this, SLOT(SlotGetInterval(QString)));
 
 
@@ -47,12 +47,10 @@ add_customize_widget::~add_customize_widget()
     delete ui;
 }
 
-void add_customize_widget::SlotGetKey(QString str)
+void add_customize_widget::SlotGetKey(char c)
 {
-   //建议为setKeys加一个以String为参数的函数，否则类型转换非常麻烦
 
-    //这里可能出问题？ string没法直接转char，那只能取第一个字符了
-    m_key->setKeys(str.toStdString()[0]);
+    m_key->setKeys(c);
 }
 
 void add_customize_widget::SlotGetInterval(QString str)
