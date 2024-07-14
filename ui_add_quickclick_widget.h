@@ -14,7 +14,6 @@
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QPushButton>
-#include <QtWidgets/QToolButton>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -25,7 +24,7 @@ public:
     QLineEdit *nameEdit;
     QLineEdit *intervalEdit;
     QPushButton *saveBtn;
-    QToolButton *buttonBtn;
+    QPushButton *buttonBtn;
     QLabel *nameLabel;
     QLabel *buttonLabel;
     QLabel *intervalLabel;
@@ -48,7 +47,7 @@ public:
         font.setFamily(QString::fromUtf8("Agency FB"));
         font.setPointSize(11);
         saveBtn->setFont(font);
-        buttonBtn = new QToolButton(add_quickClick_widget);
+        buttonBtn = new QPushButton(add_quickClick_widget);
         buttonBtn->setObjectName(QString::fromUtf8("buttonBtn"));
         buttonBtn->setGeometry(QRect(240, 120, 141, 31));
         nameLabel = new QLabel(add_quickClick_widget);
@@ -76,7 +75,7 @@ public:
         intervalEdit->setText(QString());
         intervalEdit->setPlaceholderText(QString());
         saveBtn->setText(QCoreApplication::translate("add_quickClick_widget", "\344\277\235\345\255\230", nullptr));
-        buttonBtn->setText(QCoreApplication::translate("add_quickClick_widget", "...", nullptr));
+        buttonBtn->setText(QCoreApplication::translate("add_quickClick_widget", "\351\200\211\346\213\251", nullptr));
         nameLabel->setText(QCoreApplication::translate("add_quickClick_widget", "  \345\220\215\347\247\260", nullptr));
         buttonLabel->setText(QCoreApplication::translate("add_quickClick_widget", "  \346\214\211\351\224\256", nullptr));
         intervalLabel->setText(QCoreApplication::translate("add_quickClick_widget", "  \351\227\264\351\232\224(ms)", nullptr));

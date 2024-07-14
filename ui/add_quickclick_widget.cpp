@@ -19,7 +19,7 @@ add_quickClick_widget::add_quickClick_widget(QWidget *parent) :
     QAction* act2 = menu->addAction("右键");
     QAction* act3 = menu->addAction("中键");
     ui->buttonBtn->setMenu(menu);
-    ui->buttonBtn->setPopupMode(QToolButton::InstantPopup);
+    //ui->buttonBtn->setPopupMode(QToolButton::InstantPopup);
 
 
     //设置时间间隔
@@ -28,16 +28,19 @@ add_quickClick_widget::add_quickClick_widget(QWidget *parent) :
     connect(act1, &QAction::triggered, this, [=]()
     {
         m_mouse->setKeyType(0);
+        ui->buttonBtn->setText("左键");
     });
 
     connect(act2, &QAction::triggered, this, [=]()
     {
         m_mouse->setKeyType(1);
+        ui->buttonBtn->setText("右键");
     });
 
     connect(act3, &QAction::triggered, this, [=]()
     {
         m_mouse->setKeyType(2);
+        ui->buttonBtn->setText("中键");
     });
 
     connect(ui->saveBtn, &QPushButton::clicked, this, [=]()
