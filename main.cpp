@@ -10,10 +10,11 @@
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
+    Applycation::init();
     MainWindow w;
     w.show();
 
-    Applycation::init();
+    //Applycation::init();
 
     return a.exec();
 }
