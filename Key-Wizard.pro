@@ -21,6 +21,7 @@ INCLUDEPATH +=$$PWD/ui
 
 
 SOURCES += \
+    POJO/kctable.cpp \
     POJO/keydefine.cpp \
     POJO/mousedefine.cpp \
     POJO/mydefine.cpp \
@@ -47,6 +48,7 @@ SOURCES += \
     util/winkeyhook.cpp
 
 HEADERS += \
+    POJO/kctable.h \
     POJO/keydefine.h \
     POJO/mousedefine.h \
     POJO/mydefine.h \
