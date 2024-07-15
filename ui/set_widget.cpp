@@ -1,6 +1,6 @@
 #include "set_widget.h"
 #include "ui_set_widget.h"
-
+#include"applycation.h"
 set_widget::set_widget(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::set_widget)
@@ -21,16 +21,31 @@ set_widget::~set_widget()
 void set_widget::on_startButton_clicked()
 {
     ui->startlineEdit->setVisible(true);     //显示文本框
+    //回车触发
+    connect(ui->startlineEdit,&QLineEdit::returnPressed,this,[=](){qInfo()<<ui->startlineEdit->text();});
     QString startset=ui->startlineEdit->text();  //获取输入快捷键
-    QChar getStartKey=0;
-    getStartKey=startset[0];                 //getStartKey存开始快捷键；
+
+    QChar StartKey=0;
+    StartKey=startset[0];
+    int start=StartKey.unicode();
+    Applycation::setStartKey(start);           //保存开始快捷键ASC码
+    Applycation::getStartKey();
+
 }
 
 void set_widget::on_endButton_2_clicked()
 {
     ui->endlineEdit_2->setVisible(true);        //显示文本框
+
+    connect(ui->endlineEdit_2,&QLineEdit::returnPressed,this,[=](){qInfo()<<ui->endlineEdit_2->text();});
+
     QString endset=ui->endlineEdit_2->text();   //获取结束快捷键
 
-    QChar getEndKey=0;
-    getEndKey=endset[0];                     //getEndKey存结束快捷键
+    QChar Endkey=0;
+    Endkey=endset[0];
+    int end=Endkey.unicode();
+    Applycation::setEndKey(end);            //保存结束快捷键ASC码
+    Applycation::getEndKey();
+
+
 }
