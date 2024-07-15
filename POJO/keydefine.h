@@ -11,6 +11,7 @@
 #include<data/mysql.h>
 #include"applycation.h"
 #include "POJO/kctable.h"
+
 using namespace std;
 class KeyDefine:public myDefine{
 public:
@@ -40,11 +41,15 @@ public:
     void end();
     //在调用regord前先清除上次录制的内容
     void clear();
+    //回显键名】
+    void echonames();
 
     vector<int>keys; //键的名称，以ascii码存储
     vector<int>times; //两个键之间的时间间隔
-    
-    static string keyname;
+    //存储每个按键的键名
+    static vector<string> keynames;
+    //存储回显的字符串
+    string keyname;
     static bool isechoing;
 private:
 

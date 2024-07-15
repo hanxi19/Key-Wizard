@@ -68,3 +68,7 @@ vector<myDefine*>* Applycation::getDefineList(){
 void Applycation::addDefine(myDefine *define){
     defineList->push_back(define);
 }
+void Applycation::deleteDefine(int id, myDefine *define){
+    mySql mysql;
+    mysql.deleteDefine(id,define);
+}

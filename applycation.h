@@ -17,6 +17,7 @@ public:
     static void setStartKey(int key);
     static void setEndKey(int key);
     static void addDefine(myDefine* define);
+    static void deleteDefine(int id,myDefine* define);
 private:
     Applycation();
     static int startKey;
