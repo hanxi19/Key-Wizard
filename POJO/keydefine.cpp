@@ -54,59 +54,59 @@ KeyDefine* KeyDefine::toObject(const string & data){
 string KeyDefine::toString()
 {
 
-    string data;
-    for(unsigned i=0;i<this->keys.size();i++){
-        data+=to_string(times[i]);
-        data+=' ';
-        data+=to_string(keys[i]);
-        data+=' ';
+        string data;
+        for(unsigned i=0;i<this->keys.size();i++){
+            data+=to_string(times[i]);
+            data+=' ';
+            data+=to_string(keys[i]);
+            data+=' ';
+        }
+        qDebug()<<"the result of toString is:"+QString::fromStdString( data)<<endl;
+        return data;
     }
-    qDebug()<<"the result of toString is:"+QString::fromStdString( data)<<endl;
-    return data;
-}
-vector<int> KeyDefine::getKeys(){
-    return this->keys;
-}
-vector<int> KeyDefine::getTimes(){
-    return this->times;
-}
-void KeyDefine::setName(string name){
-    this->name=name;
-}
-string KeyDefine::getName(){
-    return this->name;
-}
-void KeyDefine::setKeys(char c){
-    this->keys.push_back(c);
-}
-void KeyDefine::setKeys(vector<int> keys){
-    this->keys=keys;
-}
-void KeyDefine::setTimes(int time){
-    this->times.push_back(time);
-}
-void KeyDefine::setTimes(vector<int> times){
-    this->times=times;
-}
-void KeyDefine::save(){
-    mySql sql;
-    sql.insertDefine(this);
-    Applycation::addDefine(this);
-}
-HHOOK KeyDefine::keyboardHook = NULL;
-DWORD KeyDefine::lastKeyUpTick = 0;
-bool KeyDefine::keyRecorded = false;
-bool KeyDefine::isechoing = true;
-vector<string> KeyDefine::keynames;
-//string KeyDefine::keyname;
-int KeyDefine::keyvcode=0;
-int KeyDefine::keyintervaltime=0;
-KeyDefine* KeyDefine::instance=nullptr;
-void KeyDefine::setInstance(KeyDefine* ptr){
-          instance = ptr;
-      }
-LRESULT CALLBACK KeyDefine::KeyboardProc(int nCode, WPARAM wParam, LPARAM lParam) {
-    PKBDLLHOOKSTRUCT p = (PKBDLLHOOKSTRUCT)lParam;
+    vector<int> KeyDefine::getKeys(){
+        return this->keys;
+    }
+    vector<int> KeyDefine::getTimes(){
+        return this->times;
+    }
+    void KeyDefine::setName(string name){
+        this->name=name;
+    }
+    string KeyDefine::getName(){
+        return this->name;
+    }
+    void KeyDefine::setKeys(char c){
+        this->keys.push_back(c);
+    }
+    void KeyDefine::setKeys(vector<int> keys){
+        this->keys=keys;
+    }
+    void KeyDefine::setTimes(int time){
+        this->times.push_back(time);
+    }
+    void KeyDefine::setTimes(vector<int> times){
+        this->times=times;
+    }
+    void KeyDefine::save(){
+        mySql sql;
+        sql.insertDefine(this);
+        Applycation::addDefine(this);
+    }
+    HHOOK KeyDefine::keyboardHook = NULL;
+    DWORD KeyDefine::lastKeyUpTick = 0;
+    bool KeyDefine::keyRecorded = false;
+
+    vector<string> KeyDefine::keynames;
+    //string KeyDefine::keyname;
+    int KeyDefine::keyvcode=0;
+    int KeyDefine::keyintervaltime=0;
+    KeyDefine* KeyDefine::instance=nullptr;
+    void KeyDefine::setInstance(KeyDefine* ptr){
+              instance = ptr;
+          }
+    LRESULT CALLBACK KeyDefine::KeyboardProc(int nCode, WPARAM wParam, LPARAM lParam) {
+        PKBDLLHOOKSTRUCT p = (PKBDLLHOOKSTRUCT)lParam;
 
     if (nCode == HC_ACTION) {
 
