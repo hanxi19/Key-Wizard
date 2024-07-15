@@ -21,6 +21,8 @@ public:
 signals:
     //发送保存成功的信号
     void sendSaveSuccess();
+
+
 private:
     Ui::add_record_widget *ui;
     save_success* m_save ;

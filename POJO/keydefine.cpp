@@ -1,6 +1,6 @@
 #include "keydefine.h"
 #include "QDebug"
-
+#include "POJO/kctable.h"
 KeyDefine::KeyDefine()
 {
 
@@ -94,9 +94,11 @@ void KeyDefine::save(){
 HHOOK KeyDefine::keyboardHook = NULL;
 DWORD KeyDefine::lastKeyUpTick = 0;
 bool KeyDefine::keyRecorded = false;
+bool KeyDefine::isechoing=false;
 int KeyDefine::keyvcode=0;
 int KeyDefine::keyintervaltime=0;
 KeyDefine* KeyDefine::instance=nullptr;
+string KeyDefine::keyname;
 void KeyDefine::setInstance(KeyDefine* ptr){
           instance = ptr;
       }
@@ -121,6 +123,10 @@ LRESULT CALLBACK KeyDefine::KeyboardProc(int nCode, WPARAM wParam, LPARAM lParam
                     }
                     keyRecorded = true; // 标记键值已被记录
                     instance->keys.push_back(p->vkCode);
+                    keyname=checkKeyTable(p->vkCode);
+                    KeyDefine::isechoing=true;
+
+
                 }
             } else {
                 if ((wParam == WM_KEYUP) || (wParam == WM_SYSKEYDOWN)) {
@@ -153,8 +159,14 @@ void KeyDefine::regord(){
     // 消息循环
 
     while (GetMessage(&Msg, NULL, 0, 0) > 0) {
+        if (KeyDefine::isechoing) {
+                // 直接更新 UI 控件
+                qDebug()<<QString::fromStdString(KeyDefine::keyname);
+                KeyDefine::isechoing = false; // 重置状态
+            }
         TranslateMessage(&Msg);
         DispatchMessage(&Msg);
+
     }
 
     return ;

@@ -8,7 +8,7 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
 }
-
+KeyDefine key;
 MainWindow::~MainWindow()
 {
     delete ui;
@@ -16,11 +16,21 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_triggerBtn_clicked()
 {
+<<<<<<< Updated upstream
+=======
+    //ui->stackedWidget->setCurrentIndex(0);
+    key.regord();
+>>>>>>> Stashed changes
 
 }
 
 void MainWindow::on_addBtn_clicked()
 {
+<<<<<<< Updated upstream
+=======
+    //ui->stackedWidget->setCurrentIndex(1);
+    key.end();
+>>>>>>> Stashed changes
 
 }
 

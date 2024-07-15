@@ -1,6 +1,7 @@
 #include "add_record_widget.h"
 #include "ui_add_record_widget.h"
 #include "..\POJO\keydefine.h"
+
 add_record_widget::add_record_widget(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::add_record_widget)
@@ -36,4 +37,6 @@ add_record_widget::~add_record_widget()
 {
     delete ui;
 }
+
+
 
