@@ -181,10 +181,10 @@
             keynames.clear();
         }
 
-    string KeyDefine::echonames(){
+    void KeyDefine::echonames(){
         for(string temp:keynames){
             keyname+=temp;
             keyname+=' ';
         }
-        return keyname;
+        return ;
     }

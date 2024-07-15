@@ -42,7 +42,7 @@ public:
     //在调用regord前先清除上次录制的内容
     void clear();
     //回显键名】
-    string echonames();
+    void echonames();
 
     vector<int>keys; //键的名称，以ascii码存储
     vector<int>times; //两个键之间的时间间隔
