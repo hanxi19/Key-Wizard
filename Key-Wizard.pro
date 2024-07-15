@@ -38,6 +38,7 @@ SOURCES += \
     ui/customize_key_and_interval.cpp \
     ui/input_incomplete.cpp \
     ui/keyecholineedit.cpp \
+    ui/keylistenerbutton.cpp \
     ui/no_name.cpp \
     ui/save_success.cpp \
     ui/set_widget.cpp \
@@ -64,6 +65,7 @@ HEADERS += \
     ui/customize_key_and_interval.h \
     ui/input_incomplete.h \
     ui/keyecholineedit.h \
+    ui/keylistenerbutton.h \
     ui/no_name.h \
     ui/save_success.h \
     ui/set_widget.h \

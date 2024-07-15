@@ -15,6 +15,7 @@ debug/add_widget.o
 debug/customize_key_and_interval.o
 debug/input_incomplete.o
 debug/keyecholineedit.o
+debug/keylistenerbutton.o
 debug/no_name.o
 debug/save_success.o
 debug/set_widget.o
@@ -31,6 +32,7 @@ debug/moc_add_widget.o
 debug/moc_customize_key_and_interval.o
 debug/moc_input_incomplete.o
 debug/moc_keyecholineedit.o
+debug/moc_keylistenerbutton.o
 debug/moc_no_name.o
 debug/moc_save_success.o
 debug/moc_set_widget.o
