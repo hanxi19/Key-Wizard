@@ -96,7 +96,7 @@
     HHOOK KeyDefine::keyboardHook = NULL;
     DWORD KeyDefine::lastKeyUpTick = 0;
     bool KeyDefine::keyRecorded = false;
-    bool KeyDefine::isechoing = true;
+
     vector<string> KeyDefine::keynames;
     //string KeyDefine::keyname;
     int KeyDefine::keyvcode=0;

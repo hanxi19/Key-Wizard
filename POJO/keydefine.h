@@ -50,7 +50,7 @@ public:
     static vector<string> keynames;
     //存储回显的字符串
     string keyname;
-    static bool isechoing;
+
 private:
 
     string name;
