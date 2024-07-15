@@ -1,3 +1,4 @@
+release/kctable.o
 release/keydefine.o
 release/mousedefine.o
 release/mydefine.o

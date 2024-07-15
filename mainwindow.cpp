@@ -1,7 +1,8 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include "POJO/keydefine.h"
-
+#include<QDebug>
+#include<QString>
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
@@ -36,16 +37,20 @@ MainWindow::~MainWindow()
 void MainWindow::on_triggerBtn_clicked()
 {
     ui->stackedWidget->setCurrentIndex(0);
+
 }
 
 void MainWindow::on_addBtn_clicked()
 {
+
      ui->stackedWidget->setCurrentIndex(1);
+
 }
 
 void MainWindow::on_setBtn_clicked()
 {
-     ui->stackedWidget->setCurrentIndex(2);
+    ui->stackedWidget->setCurrentIndex(2);
+
 }
 
 void MainWindow::keyPressEvent(int keyCode)

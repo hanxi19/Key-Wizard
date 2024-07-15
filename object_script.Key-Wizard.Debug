@@ -1,3 +1,4 @@
+debug/kctable.o
 debug/keydefine.o
 debug/mousedefine.o
 debug/mydefine.o
