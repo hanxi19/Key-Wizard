@@ -10,6 +10,7 @@
 #include<QString>
 #include<data/mysql.h>
 #include"applycation.h"
+#include "POJO/kctable.h"
 using namespace std;
 class KeyDefine:public myDefine{
 public:
@@ -42,6 +43,9 @@ public:
 
     vector<int>keys; //键的名称，以ascii码存储
     vector<int>times; //两个键之间的时间间隔
+    
+    static string keyname;
+    static bool isechoing;
 private:
 
     string name;

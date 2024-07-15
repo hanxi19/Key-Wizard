@@ -15,13 +15,15 @@ void KeyEchoLineEdit::keyPressEvent(QKeyEvent *event) {
     if (event->modifiers() != Qt::NoModifier && key == 0) {
         return;
     }
+    //不需要组合键
     Qt::KeyboardModifiers modifiers = event->modifiers();
     if(modifiers == Qt::NoModifier){
         keyText = QKeySequence(key).toString(QKeySequence::PortableText);
     }else{
 
-     keyText = QKeySequence(modifiers + key).toString(QKeySequence::PortableText);
+     keyText = QKeySequence(modifiers).toString(QKeySequence::PortableText);
     }
+    //keyText = QKeySequence(key).toString(QKeySequence::PortableText);
     setText(keyText);
     //将按键转换为ascii码并保存
     if (key < 128) {

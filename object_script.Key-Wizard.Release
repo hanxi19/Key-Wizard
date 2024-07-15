@@ -1,3 +1,4 @@
+release/kctable.o
 release/keydefine.o
 release/mousedefine.o
 release/mydefine.o
@@ -14,6 +15,7 @@ release/add_widget.o
 release/customize_key_and_interval.o
 release/input_incomplete.o
 release/keyecholineedit.o
+release/keylistenerbutton.o
 release/no_name.o
 release/save_success.o
 release/set_widget.o
@@ -30,6 +32,7 @@ release/moc_add_widget.o
 release/moc_customize_key_and_interval.o
 release/moc_input_incomplete.o
 release/moc_keyecholineedit.o
+release/moc_keylistenerbutton.o
 release/moc_no_name.o
 release/moc_save_success.o
 release/moc_set_widget.o

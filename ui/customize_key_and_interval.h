@@ -4,6 +4,7 @@
 #include <QDialog>
 #include "input_incomplete.h"
 #include "keyecholineedit.h"
+#include "keylistenerbutton.h"
 
 namespace Ui {
 class customize_key_and_interval;
@@ -24,6 +25,7 @@ private:
     Ui::customize_key_and_interval *ui;
     input_incomplete* m_incomplete;
     KeyEchoLineEdit* buttonEdit;
+    KeyListenerButton* keyButton;
 signals:
     void SignalSendKey(char);
     void SignalSendInterval(QString);
