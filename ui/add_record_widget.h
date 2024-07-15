@@ -3,6 +3,8 @@
 
 #include <QWidget>
 #include "save_success.h"
+#include "no_name.h"
+#include "soft_keyboard.h"
 
 namespace Ui {
 class add_record_widget;
@@ -22,8 +24,12 @@ signals:
     //发送保存成功的信号
     void sendSaveSuccess();
 private:
+
     Ui::add_record_widget *ui;
     save_success* m_save ;
+    no_name* m_name;
+    soft_keyboard* keyboard;
+
 };
 
 #endif // ADD_RECORD_WIDGET_H

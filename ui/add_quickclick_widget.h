@@ -27,6 +27,7 @@ signals:
     //发送保存成功的信号
     void sendSaveSuccess();
 private:
+
     Ui::add_quickClick_widget *ui;
     input_incomplete* m_input_incomplete;
     save_success* m_save ;
