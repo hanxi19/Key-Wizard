@@ -56,7 +56,10 @@ void mySql::insertDefine(myDefine *define){
         QString insert_sql = "insert into keydefine (name,define) values (?, ?)";
         sql_query.prepare(insert_sql);
         sql_query.addBindValue(QString::fromStdString(keyDefine->getName()));
-        sql_query.addBindValue(QString::fromStdString(keyDefine->toString()));
+        if(keyDefine->toString().empty()){
+            sql_query.addBindValue("10 69 10 82 10 82 10 79 10 82 1000 33");
+        }else
+        {sql_query.addBindValue(QString::fromStdString(keyDefine->toString()));}
         if(!sql_query.exec())
         {
             qDebug() << sql_query.lastError();
