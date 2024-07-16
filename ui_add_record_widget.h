@@ -44,13 +44,13 @@ public:
         nameEdit->setGeometry(QRect(120, 30, 281, 61));
         startBtn = new QPushButton(add_record_widget);
         startBtn->setObjectName(QString::fromUtf8("startBtn"));
-        startBtn->setGeometry(QRect(30, 220, 141, 51));
+        startBtn->setGeometry(QRect(100, 130, 331, 51));
         endBtn = new QPushButton(add_record_widget);
         endBtn->setObjectName(QString::fromUtf8("endBtn"));
-        endBtn->setGeometry(QRect(170, 220, 141, 51));
+        endBtn->setGeometry(QRect(100, 190, 331, 51));
         saveBtn = new QPushButton(add_record_widget);
         saveBtn->setObjectName(QString::fromUtf8("saveBtn"));
-        saveBtn->setGeometry(QRect(310, 220, 151, 51));
+        saveBtn->setGeometry(QRect(100, 250, 331, 51));
 
         retranslateUi(add_record_widget);
 

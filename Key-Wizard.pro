@@ -40,8 +40,10 @@ SOURCES += \
     ui/keyecholineedit.cpp \
     ui/keylistenerbutton.cpp \
     ui/no_name.cpp \
+    ui/notrecording.cpp \
     ui/save_success.cpp \
     ui/set_widget.cpp \
+    ui/showkeyandinterval.cpp \
     ui/soft_keyboard.cpp \
     ui/triger_widget.cpp \
     util/myfile.cpp \
@@ -67,8 +69,10 @@ HEADERS += \
     ui/keyecholineedit.h \
     ui/keylistenerbutton.h \
     ui/no_name.h \
+    ui/notrecording.h \
     ui/save_success.h \
     ui/set_widget.h \
+    ui/showkeyandinterval.h \
     ui/soft_keyboard.h \
     ui/triger_widget.h \
     util/myfile.h \
@@ -84,8 +88,10 @@ FORMS += \
     ui/customize_key_and_interval.ui \
     ui/input_incomplete.ui \
     ui/no_name.ui \
+    ui/notrecording.ui \
     ui/save_success.ui \
     ui/set_widget.ui \
+    ui/showkeyandinterval.ui \
     ui/soft_keyboard.ui \
     ui/triger_widget.ui
 

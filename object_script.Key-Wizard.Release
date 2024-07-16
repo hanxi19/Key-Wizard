@@ -17,8 +17,10 @@ release/input_incomplete.o
 release/keyecholineedit.o
 release/keylistenerbutton.o
 release/no_name.o
+release/notrecording.o
 release/save_success.o
 release/set_widget.o
+release/showkeyandinterval.o
 release/soft_keyboard.o
 release/triger_widget.o
 release/myfile.o
@@ -34,7 +36,9 @@ release/moc_input_incomplete.o
 release/moc_keyecholineedit.o
 release/moc_keylistenerbutton.o
 release/moc_no_name.o
+release/moc_notrecording.o
 release/moc_save_success.o
 release/moc_set_widget.o
+release/moc_showkeyandinterval.o
 release/moc_soft_keyboard.o
 release/moc_triger_widget.o

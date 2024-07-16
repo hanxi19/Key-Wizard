@@ -45,9 +45,9 @@
   <widget class="QPushButton" name="startBtn">
    <property name="geometry">
     <rect>
-     <x>30</x>
-     <y>220</y>
-     <width>141</width>
+     <x>100</x>
+     <y>130</y>
+     <width>331</width>
      <height>51</height>
     </rect>
    </property>
@@ -58,9 +58,9 @@
   <widget class="QPushButton" name="endBtn">
    <property name="geometry">
     <rect>
-     <x>170</x>
-     <y>220</y>
-     <width>141</width>
+     <x>100</x>
+     <y>190</y>
+     <width>331</width>
      <height>51</height>
     </rect>
    </property>
@@ -71,9 +71,9 @@
   <widget class="QPushButton" name="saveBtn">
    <property name="geometry">
     <rect>
-     <x>310</x>
-     <y>220</y>
-     <width>151</width>
+     <x>100</x>
+     <y>250</y>
+     <width>331</width>
      <height>51</height>
     </rect>
    </property>
