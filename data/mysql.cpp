@@ -100,7 +100,7 @@ void mySql::deleteDefine(int id,myDefine* mydefine){
         }
         else
         {
-            qDebug()<<"keyDefine deleted!";
+            qDebug()<<"keyDefine"<<id<<"deleted!";
         }
     }
     else{

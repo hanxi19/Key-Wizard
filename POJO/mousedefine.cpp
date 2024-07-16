@@ -32,5 +32,7 @@ void MouseDefine::setTime(int time){
 void MouseDefine:: save(){
     mySql sql;
     sql.insertDefine(this);
-    Applycation::addDefine(this);
+    mySql mysql;
+    Applycation::setDefineList(mysql.queryDefine());
+    //Applycation::addDefine(this);
 }
