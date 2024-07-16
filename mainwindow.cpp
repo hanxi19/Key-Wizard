@@ -60,9 +60,8 @@ void MainWindow::on_addBtn_clicked()
 
 void triger_widget:: triger_widget::on_deleteBtn_clicked()
 {
-    Applycation::deleteDefine(tem,(*list)[choice]);
+    Applycation::deleteDefine(id[choice],(*list)[choice]);
     update();
-
 }
 
 void MainWindow::on_setBtn_clicked()

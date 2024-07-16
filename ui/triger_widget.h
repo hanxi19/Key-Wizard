@@ -28,6 +28,7 @@ public:
     ~triger_widget();
     int choice=0;          //选择触发哪一个宏
     int tem;
+    vector<int> id;
     vector<myDefine*>* list=Applycation::getDefineList();
 
 private slots:

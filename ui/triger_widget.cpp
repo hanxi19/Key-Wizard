@@ -52,9 +52,15 @@ triger_widget::triger_widget(QWidget *parent)
     QPushButton *deletebutton = new QPushButton("delete",this);
     deletebutton->setFixedSize(70,50);
 
-    KeyDefine *key=new KeyDefine;
-    tem=key->getId();
-
+    myDefine* define=(*list)[i];
+    if(typeid (*define)==typeid(KeyDefine)){
+        KeyDefine* keyDefine=dynamic_cast<KeyDefine*>(define);
+        id.push_back(keyDefine->getId());
+    }
+    else{
+        MouseDefine* mouseDefine=dynamic_cast<MouseDefine*>(define);
+        id.push_back(mouseDefine->getId());
+    }
 
     setcheckbox(checkbox);
     layout->addItem(new QSpacerItem(400,50,QSizePolicy::Minimum,QSizePolicy::Fixed));
