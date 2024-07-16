@@ -11,6 +11,7 @@
 #include<QButtonGroup>
 #include<QDebug>
 #include<QPushButton>
+#include<QScrollArea>
 #include"applycation.h"
 #include"../POJO/mydefine.h"
 #include"definetrigerthread.h"
@@ -29,6 +30,7 @@ public:
     int choice=0;          //选择触发哪一个宏
     int tem;
     vector<myDefine*>* list=Applycation::getDefineList();
+    KeyDefine *key=new KeyDefine;
 
 private slots:
     void on_deleteBtn_clicked();

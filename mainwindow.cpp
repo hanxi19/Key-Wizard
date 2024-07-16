@@ -60,7 +60,11 @@ void MainWindow::on_addBtn_clicked()
 
 void triger_widget:: triger_widget::on_deleteBtn_clicked()
 {
-    Applycation::deleteDefine(tem,(*list)[choice]);
+
+//    KeyDefine *key=new KeyDefine;
+//    tem=key->getId();
+    qDebug()<<tem;
+    Applycation::deleteDefine(tem,(*list)[tem]);
     update();
 
 }

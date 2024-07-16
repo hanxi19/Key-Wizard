@@ -29,9 +29,14 @@ triger_widget::triger_widget(QWidget *parent)
 {
     ui->setupUi(this);
 
+    //
+    QScrollArea* scrollArea = new QScrollArea(this);
+    //
     QWidget *window =new QWidget(this);        //定义一个界面
-    QVBoxLayout *mainlayout =new QVBoxLayout;  //创建垂直布局
+    QVBoxLayout *mainlayout =new QVBoxLayout(window);  //创建垂直布局  //加了window
     QButtonGroup *group =new QButtonGroup;
+
+
 
     if(list!=nullptr)
     {
@@ -52,12 +57,12 @@ triger_widget::triger_widget(QWidget *parent)
     QPushButton *deletebutton = new QPushButton("delete",this);
     deletebutton->setFixedSize(70,50);
 
-    KeyDefine *key=new KeyDefine;
     tem=key->getId();
+    qDebug()<<tem;
 
 
     setcheckbox(checkbox);
-    layout->addItem(new QSpacerItem(400,50,QSizePolicy::Minimum,QSizePolicy::Fixed));
+    layout->addItem(new QSpacerItem(300,50,QSizePolicy::Minimum,QSizePolicy::Fixed));
     layout->addWidget(checkbox);            //将label添加到水平布局中
 
     layout->addWidget(deletebutton);
@@ -81,6 +86,10 @@ triger_widget::triger_widget(QWidget *parent)
 
 }
     group->setExclusive(true);
+    //
+    scrollArea->setWidget(window);
+    scrollArea->setWidgetResizable(true);
+    //scrollArea->resize(600,600);
     window->setLayout(mainlayout);
     window->show();
 }
