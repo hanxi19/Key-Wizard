@@ -39,7 +39,7 @@ customize_key_and_interval::~customize_key_and_interval()
 
 void customize_key_and_interval::on_completeBtn_clicked()
 {
-    char str1 = keyButton-> getAsciiCode();
+    char str1 = keyButton-> getWindowsKeyCode();
     QString str2 = ui->intervalEdit->text();
     if(str1 == 0 || str2 == nullptr){
         m_incomplete->show();

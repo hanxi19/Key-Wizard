@@ -22,8 +22,8 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_KeyListenerButton_t {
-    QByteArrayData data[3];
-    char stringdata0[34];
+    QByteArrayData data[4];
+    char stringdata0[38];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -33,11 +33,12 @@ struct qt_meta_stringdata_KeyListenerButton_t {
 static const qt_meta_stringdata_KeyListenerButton_t qt_meta_stringdata_KeyListenerButton = {
     {
 QT_MOC_LITERAL(0, 0, 17), // "KeyListenerButton"
-QT_MOC_LITERAL(1, 18, 14), // "startListening"
-QT_MOC_LITERAL(2, 33, 0) // ""
+QT_MOC_LITERAL(1, 18, 10), // "keyPressed"
+QT_MOC_LITERAL(2, 29, 0), // ""
+QT_MOC_LITERAL(3, 30, 7) // "keyText"
 
     },
-    "KeyListenerButton\0startListening\0"
+    "KeyListenerButton\0keyPressed\0\0keyText"
 };
 #undef QT_MOC_LITERAL
 
@@ -52,13 +53,13 @@ static const uint qt_meta_data_KeyListenerButton[] = {
        0,    0, // enums/sets
        0,    0, // constructors
        0,       // flags
-       0,       // signalCount
+       1,       // signalCount
 
- // slots: name, argc, parameters, tag, flags
-       1,    0,   19,    2, 0x08 /* Private */,
+ // signals: name, argc, parameters, tag, flags
+       1,    1,   19,    2, 0x06 /* Public */,
 
- // slots: parameters
-    QMetaType::Void,
+ // signals: parameters
+    QMetaType::Void, QMetaType::QString,    3,
 
        0        // eod
 };
@@ -69,11 +70,19 @@ void KeyListenerButton::qt_static_metacall(QObject *_o, QMetaObject::Call _c, in
         auto *_t = static_cast<KeyListenerButton *>(_o);
         Q_UNUSED(_t)
         switch (_id) {
-        case 0: _t->startListening(); break;
+        case 0: _t->keyPressed((*reinterpret_cast< QString(*)>(_a[1]))); break;
         default: ;
         }
+    } else if (_c == QMetaObject::IndexOfMethod) {
+        int *result = reinterpret_cast<int *>(_a[0]);
+        {
+            using _t = void (KeyListenerButton::*)(QString );
+            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&KeyListenerButton::keyPressed)) {
+                *result = 0;
+                return;
+            }
+        }
     }
-    Q_UNUSED(_a);
 }
 
 QT_INIT_METAOBJECT const QMetaObject KeyListenerButton::staticMetaObject = { {
@@ -114,6 +123,13 @@ int KeyListenerButton::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
         _id -= 1;
     }
     return _id;
+}
+
+// SIGNAL 0
+void KeyListenerButton::keyPressed(QString _t1)
+{
+    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))) };
+    QMetaObject::activate(this, &staticMetaObject, 0, _a);
 }
 QT_WARNING_POP
 QT_END_MOC_NAMESPACE

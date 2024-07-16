@@ -12,8 +12,6 @@
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QLabel>
-#include <QtWidgets/QLineEdit>
-#include <QtWidgets/QPushButton>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -23,10 +21,6 @@ class Ui_set_widget
 public:
     QLabel *label;
     QLabel *label_2;
-    QPushButton *startButton;
-    QPushButton *endButton_2;
-    QLineEdit *startlineEdit;
-    QLineEdit *endlineEdit_2;
 
     void setupUi(QWidget *set_widget)
     {
@@ -44,18 +38,6 @@ public:
         label_2->setObjectName(QString::fromUtf8("label_2"));
         label_2->setGeometry(QRect(20, 120, 171, 31));
         label_2->setFont(font);
-        startButton = new QPushButton(set_widget);
-        startButton->setObjectName(QString::fromUtf8("startButton"));
-        startButton->setGeometry(QRect(220, 60, 131, 31));
-        endButton_2 = new QPushButton(set_widget);
-        endButton_2->setObjectName(QString::fromUtf8("endButton_2"));
-        endButton_2->setGeometry(QRect(219, 119, 131, 31));
-        startlineEdit = new QLineEdit(set_widget);
-        startlineEdit->setObjectName(QString::fromUtf8("startlineEdit"));
-        startlineEdit->setGeometry(QRect(212, 59, 141, 41));
-        endlineEdit_2 = new QLineEdit(set_widget);
-        endlineEdit_2->setObjectName(QString::fromUtf8("endlineEdit_2"));
-        endlineEdit_2->setGeometry(QRect(212, 110, 141, 41));
 
         retranslateUi(set_widget);
 
@@ -67,8 +49,6 @@ public:
         set_widget->setWindowTitle(QCoreApplication::translate("set_widget", "Form", nullptr));
         label->setText(QCoreApplication::translate("set_widget", "\345\274\200\345\247\213\345\277\253\346\215\267\351\224\256", nullptr));
         label_2->setText(QCoreApplication::translate("set_widget", "\347\273\223\346\235\237\345\277\253\346\215\267\351\224\256", nullptr));
-        startButton->setText(QCoreApplication::translate("set_widget", "F8", nullptr));
-        endButton_2->setText(QCoreApplication::translate("set_widget", "F10", nullptr));
     } // retranslateUi
 
 };

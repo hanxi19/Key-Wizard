@@ -45,6 +45,7 @@ SOURCES += \
     ui/set_widget.cpp \
     ui/showkeyandinterval.cpp \
     ui/soft_keyboard.cpp \
+    ui/translate.cpp \
     ui/triger_widget.cpp \
     util/myfile.cpp \
     util/myjson.cpp \
@@ -74,6 +75,7 @@ HEADERS += \
     ui/set_widget.h \
     ui/showkeyandinterval.h \
     ui/soft_keyboard.h \
+    ui/translate.h \
     ui/triger_widget.h \
     util/myfile.h \
     util/myjson.h \

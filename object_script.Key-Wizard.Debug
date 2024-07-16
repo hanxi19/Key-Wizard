@@ -22,6 +22,7 @@ debug/save_success.o
 debug/set_widget.o
 debug/showkeyandinterval.o
 debug/soft_keyboard.o
+debug/translate.o
 debug/triger_widget.o
 debug/myfile.o
 debug/myjson.o

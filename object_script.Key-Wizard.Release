@@ -22,6 +22,7 @@ release/save_success.o
 release/set_widget.o
 release/showkeyandinterval.o
 release/soft_keyboard.o
+release/translate.o
 release/triger_widget.o
 release/myfile.o
 release/myjson.o

@@ -21,6 +21,7 @@ protected:
 private:
     QLabel *label;
     char asciiCode;
+
 };
 
 #endif // KEYECHOLINEEDIT_H
