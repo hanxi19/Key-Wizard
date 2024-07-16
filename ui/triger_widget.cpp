@@ -89,7 +89,7 @@ triger_widget::triger_widget(QWidget *parent)
     //
     scrollArea->setWidget(window);
     scrollArea->setWidgetResizable(true);
-    //scrollArea->resize(600,600);
+    scrollArea->resize(700,400);
     window->setLayout(mainlayout);
     window->show();
 }
