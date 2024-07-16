@@ -33,6 +33,7 @@ private slots:
 
     void on_setBtn_clicked();
 
+    void on_upBtn_clicked();
 private:
     Ui::MainWindow *ui;
     void keyPressEvent(int keyCode);

@@ -11,10 +11,16 @@ MainWindow::MainWindow(QWidget *parent)
     WinKeyHook* start=new WinKeyHook;
     start->SetKeyPressCallBack(std::bind(&MainWindow::keyPressEvent, this, std::placeholders::_1));
 
+
     ui->triggerBtn->setStyleSheet("QPushButton:hover{background-color:lightblue;}");
     ui->setBtn->setStyleSheet("QPushButton:hover{background-color:lightblue;}");
     ui->addBtn->setStyleSheet("QPushButton:hover{background-color:lightblue;}");
 
+    QPushButton *up=new QPushButton("刷新",this);
+
+    up->setGeometry(650,500,50,50);
+    up->setEnabled(true);
+    connect(up,&QPushButton::clicked,this,&MainWindow::on_upBtn_clicked);
 
     //界面切换
     page1=new triger_widget(this);
@@ -27,6 +33,15 @@ MainWindow::MainWindow(QWidget *parent)
 
     ui->stackedWidget->setCurrentIndex(0);
 
+    connect(ui->addBtn,&QPushButton::pressed,this,[=](){
+       up->hide();
+    });
+    connect(ui->setBtn,&QPushButton::pressed,this,[=](){
+       up->hide();
+    });
+    connect(ui->triggerBtn,&QPushButton::pressed,this,[=](){
+       up->show();
+    });
 
 }
 
@@ -72,6 +87,15 @@ void MainWindow::on_setBtn_clicked()
 {
     ui->stackedWidget->setCurrentIndex(2);
 
+}
+
+void MainWindow::on_upBtn_clicked()
+{
+    triger_widget *page = new triger_widget;
+    ui->stackedWidget->insertWidget(0,page);
+    ui->stackedWidget->insertWidget(1,page2);
+    ui->stackedWidget->insertWidget(2,page3);
+    ui->stackedWidget->setCurrentIndex(0);
 }
 
 void MainWindow::keyPressEvent(int keyCode)
