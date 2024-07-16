@@ -11,6 +11,7 @@
 #include<QButtonGroup>
 #include<QDebug>
 #include<QPushButton>
+#include<QScrollArea>
 #include"applycation.h"
 #include"../POJO/mydefine.h"
 #include"definetrigerthread.h"
@@ -30,6 +31,7 @@ public:
     int tem;
     vector<int> id;
     vector<myDefine*>* list=Applycation::getDefineList();
+    KeyDefine *key=new KeyDefine;
 
 private slots:
     void on_deleteBtn_clicked();
