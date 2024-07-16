@@ -22,8 +22,8 @@ add_record_widget::add_record_widget(QWidget *parent) :
     KeyDefine* m_key = new KeyDefine();
     connect(ui->startBtn, &QPushButton::clicked, this, [=]()
     {
-        //录制
-       //keyboard->show();
+//        录制
+        keyboard->show();
         isRecording = true;
         m_key->clear();
         m_key->regord();
@@ -32,7 +32,7 @@ add_record_widget::add_record_widget(QWidget *parent) :
     connect(ui->endBtn, &QPushButton::clicked, this, [=]()
     {
         //结束录制
-        //keyboard->close();
+        keyboard->close();
         if(isRecording == true){
             QString str;
             for(int i = 0; i < m_key->keys.size(); i++){
