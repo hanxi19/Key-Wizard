@@ -91,7 +91,9 @@ string KeyDefine::toString()
     void KeyDefine::save(){
         mySql sql;
         sql.insertDefine(this);
-        Applycation::addDefine(this);
+        mySql mysql;
+        Applycation::setDefineList(mysql.queryDefine());
+        //Applycation::addDefine(this);
     }
     HHOOK KeyDefine::keyboardHook = NULL;
     DWORD KeyDefine::lastKeyUpTick = 0;

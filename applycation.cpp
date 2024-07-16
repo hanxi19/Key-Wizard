@@ -71,4 +71,8 @@ void Applycation::addDefine(myDefine *define){
 void Applycation::deleteDefine(int id, myDefine *define){
     mySql mysql;
     mysql.deleteDefine(id,define);
+    Applycation::setDefineList(mysql.queryDefine());
+}
+void Applycation::setDefineList(vector<myDefine *> *list){
+    defineList=list;
 }

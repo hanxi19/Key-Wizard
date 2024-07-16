@@ -21,6 +21,10 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
+    triger_widget *page1;
+    add_widget *page2;
+    set_widget *page3;
+    void update();
 
 private slots:
     void on_triggerBtn_clicked();
