@@ -16,6 +16,7 @@
 #include"../POJO/mydefine.h"
 #include"definetrigerthread.h"
 #include"../POJO/keydefine.h"
+#include"mybutton.h"
 QT_BEGIN_NAMESPACE
 namespace Ui { class triger_widget; }
 QT_END_NAMESPACE
@@ -34,7 +35,7 @@ public:
     KeyDefine *key=new KeyDefine;
 
 private slots:
-    void on_deleteBtn_clicked();
+    void on_deleteBtn_clicked(int choice);
 
 private:
     Ui::triger_widget *ui;

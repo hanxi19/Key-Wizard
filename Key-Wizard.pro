@@ -39,6 +39,7 @@ SOURCES += \
     ui/input_incomplete.cpp \
     ui/keyecholineedit.cpp \
     ui/keylistenerbutton.cpp \
+    ui/mybutton.cpp \
     ui/no_name.cpp \
     ui/notrecording.cpp \
     ui/save_success.cpp \
@@ -68,6 +69,7 @@ HEADERS += \
     ui/input_incomplete.h \
     ui/keyecholineedit.h \
     ui/keylistenerbutton.h \
+    ui/mybutton.h \
     ui/no_name.h \
     ui/notrecording.h \
     ui/save_success.h \

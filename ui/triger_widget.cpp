@@ -54,7 +54,9 @@ triger_widget::triger_widget(QWidget *parent)
     layout->setSpacing(10);
 
     QCheckBox *checkbox =new QCheckBox(this);
-    QPushButton *deletebutton = new QPushButton("delete",this);
+//    QPushButton *deletebutton = new QPushButton("delete",this);
+    myButton* deletebutton=new myButton(i,"delete",this);
+    deletebutton->setText("delete");
     deletebutton->setFixedSize(70,50);
 
     myDefine* define=(*list)[i];
@@ -74,7 +76,7 @@ triger_widget::triger_widget(QWidget *parent)
     layout->addWidget(deletebutton);
     group->addButton(checkbox);
     //����deletebutton���ź����
-    connect(deletebutton,&QPushButton::clicked,this,&triger_widget::on_deleteBtn_clicked);
+    connect(deletebutton,&QPushButton::clicked,deletebutton,[=]{on_deleteBtn_clicked(deletebutton->getIndex());});
 
     layout->setContentsMargins(10,10,10,10);
 
