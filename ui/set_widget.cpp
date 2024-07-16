@@ -27,8 +27,8 @@ void set_widget::on_startButton_clicked()
 
     QChar StartKey=0;
     StartKey=startset[0];
-    int start=StartKey.unicode();
-    Applycation::setStartKey(start);           //保存开始快捷键ASC码
+    //int start=StartKey.unicode();
+    Applycation::setStartKey(VK_F8);           //保存开始快捷键ASC码，写死为f8;
     Applycation::getStartKey();
 
 }
@@ -43,8 +43,8 @@ void set_widget::on_endButton_2_clicked()
 
     QChar Endkey=0;
     Endkey=endset[0];
-    int end=Endkey.unicode();
-    Applycation::setEndKey(end);            //保存结束快捷键ASC码
+    //int end=Endkey.unicode();
+    Applycation::setEndKey(VK_F10);            //保存结束快捷键ASC码，写死为f10；
     Applycation::getEndKey();
 
 

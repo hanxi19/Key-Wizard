@@ -10,7 +10,7 @@ void setcheckbox(QCheckBox *c)
     font.setFamily("Arial");
     c->setFont(font);
     c->setStyleSheet("QCheckBox::indicator{width:40px;height:40px}"
-                     "QCheckBox::indicator:checked{background-color:blue;}");
+                     );
 
 }
 //改变label字体和大小函数
@@ -32,7 +32,6 @@ triger_widget::triger_widget(QWidget *parent)
     QWidget *window =new QWidget(this);        //定义一个界面
     QVBoxLayout *mainlayout =new QVBoxLayout;  //创建垂直布局
     QButtonGroup *group =new QButtonGroup;
-    vector<myDefine*>* list=Applycation::getDefineList();
 
     if(list!=nullptr)
     {
@@ -46,15 +45,22 @@ triger_widget::triger_widget(QWidget *parent)
     //label->setText("recording files 1");
 
     setlabel(label);
-    layout->addWidget(label);               //将label添加到水平布局中
+    layout->addWidget(label,1);               //将label添加到水平布局中
+    layout->setSpacing(10);
 
     QCheckBox *checkbox =new QCheckBox(this);
+    QPushButton *deletebutton = new QPushButton("delete",this);
+    deletebutton->setFixedSize(70,50);
+
     setcheckbox(checkbox);
+    layout->addItem(new QSpacerItem(400,50,QSizePolicy::Minimum,QSizePolicy::Fixed));
     layout->addWidget(checkbox);            //将label添加到水平布局中
 
+    layout->addWidget(deletebutton);
     group->addButton(checkbox);
+    //连接deletebutton的信号与槽
+    connect(deletebutton,&QPushButton::clicked,this,&triger_widget::on_deleteBtn_clicked);
 
-    layout->setSpacing(400);
     layout->setContentsMargins(10,10,10,10);
 
     mainlayout->addLayout(layout);
@@ -76,6 +82,11 @@ triger_widget::triger_widget(QWidget *parent)
 }
 }
 
+//void triger_widget::on_deleteBtn_clicked()
+//{
+//    Applycation::deleteDefine(choice,(*list)[choice]);
+
+//}
 
 triger_widget::~triger_widget()
 {
