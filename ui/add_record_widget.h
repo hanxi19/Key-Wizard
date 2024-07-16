@@ -5,6 +5,8 @@
 #include "save_success.h"
 #include "no_name.h"
 #include "soft_keyboard.h"
+#include "showkeyandinterval.h"
+#include "notrecording.h"
 
 namespace Ui {
 class add_record_widget;
@@ -29,6 +31,12 @@ private:
     save_success* m_save ;
     no_name* m_name;
     soft_keyboard* keyboard;
+    showKeyandInterval* m_show;
+    bool isRecording;
+    notRecording* m_rec;
+
+signals:
+    void sendKeyandInterval(QString);
 
 };
 

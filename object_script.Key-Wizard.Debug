@@ -17,8 +17,10 @@ debug/input_incomplete.o
 debug/keyecholineedit.o
 debug/keylistenerbutton.o
 debug/no_name.o
+debug/notrecording.o
 debug/save_success.o
 debug/set_widget.o
+debug/showkeyandinterval.o
 debug/soft_keyboard.o
 debug/triger_widget.o
 debug/myfile.o
@@ -34,7 +36,9 @@ debug/moc_input_incomplete.o
 debug/moc_keyecholineedit.o
 debug/moc_keylistenerbutton.o
 debug/moc_no_name.o
+debug/moc_notrecording.o
 debug/moc_save_success.o
 debug/moc_set_widget.o
+debug/moc_showkeyandinterval.o
 debug/moc_soft_keyboard.o
 debug/moc_triger_widget.o

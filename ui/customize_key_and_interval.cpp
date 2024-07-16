@@ -47,6 +47,8 @@ void customize_key_and_interval::on_completeBtn_clicked()
     else{
         emit SignalSendKey(str1);
         emit SignalSendInterval(str2);
+        ui->intervalEdit->clear();
+        keyButton->setText("按下以开始监听");
         this->close();
     }
    }

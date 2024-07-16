@@ -8,6 +8,9 @@ add_record_widget::add_record_widget(QWidget *parent) :
     ui->setupUi(this);
     m_name = new no_name();
     keyboard = new soft_keyboard;
+    m_show = new showKeyandInterval;
+    m_rec = new notRecording;
+    isRecording = false;
 //    QWidget *centralWidget = new QWidget(this);
 //        QVBoxLayout *layout = new QVBoxLayout(centralWidget);
 
@@ -20,15 +23,35 @@ add_record_widget::add_record_widget(QWidget *parent) :
     connect(ui->startBtn, &QPushButton::clicked, this, [=]()
     {
         //录制
-        keyboard->show();
+       //keyboard->show();
+        isRecording = true;
+        m_key->clear();
         m_key->regord();
+
     });
     connect(ui->endBtn, &QPushButton::clicked, this, [=]()
     {
         //结束录制
-        keyboard->close();
-        m_key->end();
+        //keyboard->close();
+        if(isRecording == true){
+            QString str;
+            for(int i = 0; i < m_key->keys.size(); i++){
+                str.append(m_key->keys[i]);
+
+                str.append("\n");
+            }
+          emit sendKeyandInterval(str);
+            m_show->show();
+            m_key->end();
+            isRecording = false;
+        }
+        else
+        {
+            m_rec->show();
+        }
     });
+
+    connect(this, SIGNAL(sendKeyandInterval(QString)), m_show, SLOT(getKeyandInterval(QString)));
     connect(ui->saveBtn, &QPushButton::clicked, this, [=]()
     {
         QString str = ui->nameEdit->text();
