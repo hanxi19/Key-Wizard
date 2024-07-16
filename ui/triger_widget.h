@@ -14,7 +14,7 @@
 #include"applycation.h"
 #include"../POJO/mydefine.h"
 #include"definetrigerthread.h"
-//#include"mainwindow.h"
+#include"../POJO/keydefine.h"
 QT_BEGIN_NAMESPACE
 namespace Ui { class triger_widget; }
 QT_END_NAMESPACE
@@ -27,6 +27,7 @@ public:
     explicit triger_widget(QWidget *parent = nullptr);
     ~triger_widget();
     int choice=0;          //选择触发哪一个宏
+    int tem;
     vector<myDefine*>* list=Applycation::getDefineList();
 
 private slots:

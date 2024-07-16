@@ -52,6 +52,10 @@ triger_widget::triger_widget(QWidget *parent)
     QPushButton *deletebutton = new QPushButton("delete",this);
     deletebutton->setFixedSize(70,50);
 
+    KeyDefine *key=new KeyDefine;
+    tem=key->getId();
+
+
     setcheckbox(checkbox);
     layout->addItem(new QSpacerItem(400,50,QSizePolicy::Minimum,QSizePolicy::Fixed));
     layout->addWidget(checkbox);            //将label添加到水平布局中
