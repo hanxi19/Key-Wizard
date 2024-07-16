@@ -1,6 +1,7 @@
 #include "add_record_widget.h"
 #include "ui_add_record_widget.h"
 #include "..\POJO\keydefine.h"
+#include "..\POJO\kctable.h"
 add_record_widget::add_record_widget(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::add_record_widget)
@@ -11,18 +12,13 @@ add_record_widget::add_record_widget(QWidget *parent) :
     m_show = new showKeyandInterval;
     m_rec = new notRecording;
     isRecording = false;
-//    QWidget *centralWidget = new QWidget(this);
-//        QVBoxLayout *layout = new QVBoxLayout(centralWidget);
-
-//        // 添加软键盘到布局中
-//        layout->addWidget(keyboard);
-
-//        setCentralWidget(centralWidget);
 
     KeyDefine* m_key = new KeyDefine();
+//    ui->startBtn->setShortcut(QKeySequence(QLatin1String("F8")));
+//    ui->endBtn->setShortcut(QKeySequence(QLatin1String("F10")));
     connect(ui->startBtn, &QPushButton::clicked, this, [=]()
     {
-//        录制
+        //录制
         keyboard->show();
         isRecording = true;
         m_key->clear();
@@ -36,8 +32,8 @@ add_record_widget::add_record_widget(QWidget *parent) :
         if(isRecording == true){
             QString str;
             for(int i = 0; i < m_key->keys.size(); i++){
-                str.append(m_key->keys[i]);
 
+                str.append(QString::fromStdString(checkKeyTable(m_key->keys[i])));
                 str.append("\n");
             }
           emit sendKeyandInterval(str);
@@ -58,8 +54,6 @@ add_record_widget::add_record_widget(QWidget *parent) :
         if(str == nullptr){
             m_name->show();
         }else{
-
-
             m_key->setName(ui->nameEdit->text().toStdString());
             m_key->save();
             ui->nameEdit->clear();
