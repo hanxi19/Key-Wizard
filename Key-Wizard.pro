@@ -40,6 +40,7 @@ SOURCES += \
     ui/keyecholineedit.cpp \
     ui/keylistenerbutton.cpp \
     ui/mybutton.cpp \
+    ui/myfont.cpp \
     ui/no_name.cpp \
     ui/notrecording.cpp \
     ui/save_success.cpp \
@@ -71,6 +72,7 @@ HEADERS += \
     ui/keyecholineedit.h \
     ui/keylistenerbutton.h \
     ui/mybutton.h \
+    ui/myfont.h \
     ui/no_name.h \
     ui/notrecording.h \
     ui/save_success.h \
