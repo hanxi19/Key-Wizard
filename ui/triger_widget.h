@@ -11,10 +11,12 @@
 #include<QButtonGroup>
 #include<QDebug>
 #include<QPushButton>
+#include<QScrollArea>
 #include"applycation.h"
 #include"../POJO/mydefine.h"
 #include"definetrigerthread.h"
 #include"../POJO/keydefine.h"
+#include"mybutton.h"
 QT_BEGIN_NAMESPACE
 namespace Ui { class triger_widget; }
 QT_END_NAMESPACE
@@ -28,10 +30,12 @@ public:
     ~triger_widget();
     int choice=0;          //选择触发哪一个宏
     int tem;
+    vector<int> id;
     vector<myDefine*>* list=Applycation::getDefineList();
+    KeyDefine *key=new KeyDefine;
 
 private slots:
-    void on_deleteBtn_clicked();
+    void on_deleteBtn_clicked(int choice);
 
 private:
     Ui::triger_widget *ui;

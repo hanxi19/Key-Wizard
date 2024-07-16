@@ -12,6 +12,7 @@ int main(int argc, char *argv[])
     QApplication a(argc, argv);
     Applycation::init();
     MainWindow w;
+    w.setWindowTitle("按键精灵");
     w.show();
 
     //Applycation::init();

@@ -1,7 +1,7 @@
 #include "triger_widget.h"
 #include "ui_triger_widget.h"
 
-//checkbox¸ñÊ½¸Ä±äº¯Êý
+//checkboxï¿½ï¿½Ê½ï¿½Ä±äº¯ï¿½ï¿½
 void setcheckbox(QCheckBox *c)
 {
     QFont font;
@@ -13,7 +13,7 @@ void setcheckbox(QCheckBox *c)
                      );
 
 }
-//¸Ä±älabel×ÖÌåºÍ´óÐ¡º¯Êý
+//ï¿½Ä±ï¿½labelï¿½ï¿½ï¿½ï¿½Í´ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½
 void setlabel(QLabel *label)
 {
     QFont font;
@@ -29,41 +29,54 @@ triger_widget::triger_widget(QWidget *parent)
 {
     ui->setupUi(this);
 
-    QWidget *window =new QWidget(this);        //¶¨ÒåÒ»¸ö½çÃæ
-    QVBoxLayout *mainlayout =new QVBoxLayout;  //´´½¨´¹Ö±²¼¾Ö
+    //
+    QScrollArea* scrollArea = new QScrollArea(this);
+    //
+    QWidget *window =new QWidget(this);        //ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+    QVBoxLayout *mainlayout =new QVBoxLayout(window);  //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö±ï¿½ï¿½ï¿½ï¿½  //ï¿½ï¿½ï¿½ï¿½window
     QButtonGroup *group =new QButtonGroup;
+
+
 
     if(list!=nullptr)
     {
-    for(size_t i=0;i<list->size();i++)                       //ÓÐ¼¸¶ÎÂ¼ÖÆ£¬Ñ­»·ÏÔÊ¾¼¸´Î£¿´ý¶¨£¿ÓÃÊý×Ö3²âÊÔ
+    for(size_t i=0;i<list->size();i++)                       //ï¿½Ð¼ï¿½ï¿½ï¿½Â¼ï¿½Æ£ï¿½Ñ­ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½Î£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½3ï¿½ï¿½ï¿½ï¿½
     {
 
-    QHBoxLayout *layout=new QHBoxLayout;      //´´½¨Ò»ÐÐË®Æ½²¼¾Ö£ºÏÔÊ¾Ã¿Ò»ÐÐÃû³ÆºÍÊÇ·ñÑ¡ÓÃ°´Å¥
+    QHBoxLayout *layout=new QHBoxLayout;      //ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Ë®Æ½ï¿½ï¿½ï¿½Ö£ï¿½ï¿½ï¿½Ê¾Ã¿Ò»ï¿½ï¿½ï¿½ï¿½ï¿½Æºï¿½ï¿½Ç·ï¿½Ñ¡ï¿½Ã°ï¿½Å¥
     QLabel *label =new QLabel;
     string temp=(*list)[i]->getName();
-    label->setText(QString::fromStdString(temp));//ÏÔÊ¾ÎÄ¼þÃû
+    label->setText(QString::fromStdString(temp));//ï¿½ï¿½Ê¾ï¿½Ä¼ï¿½ï¿½ï¿½
     //label->setText("recording files 1");
 
     setlabel(label);
-    layout->addWidget(label,1);               //½«labelÌí¼Óµ½Ë®Æ½²¼¾ÖÖÐ
+    layout->addWidget(label,1);               //ï¿½ï¿½labelï¿½ï¿½ï¿½Óµï¿½Ë®Æ½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     layout->setSpacing(10);
 
     QCheckBox *checkbox =new QCheckBox(this);
-    QPushButton *deletebutton = new QPushButton("delete",this);
+//    QPushButton *deletebutton = new QPushButton("delete",this);
+    myButton* deletebutton=new myButton(i,"delete",this);
+    deletebutton->setText("delete");
     deletebutton->setFixedSize(70,50);
 
-    KeyDefine *key=new KeyDefine;
-    tem=key->getId();
-
+    myDefine* define=(*list)[i];
+    if(typeid (*define)==typeid(KeyDefine)){
+        KeyDefine* keyDefine=dynamic_cast<KeyDefine*>(define);
+        id.push_back(keyDefine->getId());
+    }
+    else{
+        MouseDefine* mouseDefine=dynamic_cast<MouseDefine*>(define);
+        id.push_back(mouseDefine->getId());
+    }
 
     setcheckbox(checkbox);
-    layout->addItem(new QSpacerItem(400,50,QSizePolicy::Minimum,QSizePolicy::Fixed));
-    layout->addWidget(checkbox);            //½«labelÌí¼Óµ½Ë®Æ½²¼¾ÖÖÐ
+    layout->addItem(new QSpacerItem(300,50,QSizePolicy::Minimum,QSizePolicy::Fixed));
+    layout->addWidget(checkbox);            //ï¿½ï¿½labelï¿½ï¿½ï¿½Óµï¿½Ë®Æ½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
     layout->addWidget(deletebutton);
     group->addButton(checkbox);
-    //Á¬½ÓdeletebuttonµÄÐÅºÅÓë²Û
-    connect(deletebutton,&QPushButton::clicked,this,&triger_widget::on_deleteBtn_clicked);
+    //ï¿½ï¿½ï¿½ï¿½deletebuttonï¿½ï¿½ï¿½Åºï¿½ï¿½ï¿½ï¿½
+    connect(deletebutton,&QPushButton::clicked,deletebutton,[=]{on_deleteBtn_clicked(deletebutton->getIndex());});
 
     layout->setContentsMargins(10,10,10,10);
 
@@ -74,13 +87,17 @@ triger_widget::triger_widget(QWidget *parent)
        {
            qDebug()<<i;
            choice=i;
-           //´¥·¢ºê
+           //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
            DefineTrigerThread::setDefine((*list)[choice]);
        }
     });
 
 }
     group->setExclusive(true);
+    //
+    scrollArea->setWidget(window);
+    scrollArea->setWidgetResizable(true);
+    scrollArea->resize(700,400);
     window->setLayout(mainlayout);
     window->show();
 }
