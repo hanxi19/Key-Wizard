@@ -17,6 +17,9 @@ void KeyListenerButton::keyPressEvent(QKeyEvent *event) {
     if (listening) {
             QString keyText = QKeySequence(event->key() + event->modifiers()).toString(QKeySequence::PortableText);
             asciiCode = event->text().isEmpty() ? 0 : event->text().at(0).toLatin1();
+            if (asciiCode >= 97 && asciiCode <= 122) {
+                        asciiCode -= 32;
+                    }
             setText(keyText);
 
             listening = false;
